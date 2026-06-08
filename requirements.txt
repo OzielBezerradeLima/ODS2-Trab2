@@ -1,0 +1,20 @@
+# ==============================================================================
+# GEARMIND - REQUISITOS DE INSTALAÇÃO DO PROJETO
+# ==============================================================================
+
+# 1. Ingestão e Processamento de Dados (Etapa 2)
+langchain==0.3.0
+langchain-community==0.3.0
+pypdf==4.2.0
+unstructured==0.15.0
+
+# 2. Embeddings e Banco Vetorial (Etapa 3)
+sentence-transformers==3.0.1
+chromadb==0.5.0
+
+# 3. Interface Visual e Servidor Web (Etapa 5)
+streamlit==1.35.0
+
+# 4. Utilitários Gerais
+pydantic==2.7.4
+requests==2.32.3
