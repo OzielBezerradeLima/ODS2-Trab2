@@ -1,7 +1,7 @@
-from src.rag import answer
+from src.rag import answer_question
 
 print(
-    answer(
+    answer_question(
         "Me diga uma receita de bolo."
     )
 )

@@ -1,55 +1,9 @@
 from .llm import generate
 from .prompts import SYSTEM_PROMPT
+from .vector_search import search
 
 
 SIMILARITY_THRESHOLD = 0.75
-
-
-def search(question):
-
-    """
-    MOCK TEMPORÁRIO
-
-    Substituir futuramente pela busca
-    do ChromaDB.
-    """
-
-    if "ram" in question.lower():
-
-        return [
-            {
-                "content": """
-                O Lenovo LOQ suporta até
-                32 GB DDR5.
-                """,
-
-                "source": "Manual Lenovo LOQ",
-
-                "page": 14,
-
-                "document_type": "manual",
-
-                "score": 0.92
-            },
-
-            {
-                "content": """
-                Frequência máxima:
-                4800 MHz.
-                """,
-
-                "source": "Manual Lenovo LOQ",
-
-                "page": 15,
-
-                "document_type": "manual",
-
-                "score": 0.87
-            }
-        ]
-
-    return []
-
 
 def has_relevant_context(results):
 
@@ -87,7 +41,7 @@ CONTEÚDO:
     return context
 
 
-def answer(question):
+def answer_question(question):
 
     results = search(question)
 
