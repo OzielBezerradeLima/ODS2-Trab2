@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+logs/
+
+# Node / React
+node_modules/
+dist/
+.npm-cache/
+frontend/logs/
