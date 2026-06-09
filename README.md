@@ -23,22 +23,37 @@ O backend usa ChromaDB para recuperacao semantica e Ollama com
 
 - Python 3.11+
 - Node.js 20+
-- Ollama instalado
+- Ollama instalado e em execucao
 - Modelo `qwen2.5:7b` baixado no Ollama
+- No Linux, tenha tambem `python3-venv` e `python3-pip` instalados
 
 ## Instalacao do Backend
+
+### Windows
 
 Na raiz do projeto:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-Baixe o modelo usado pelo projeto:
+### Linux
 
-```powershell
+Em distribuicoes baseadas em Debian/Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install python3 python3-venv python3-pip nodejs npm
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Baixe o modelo usado pelo projeto em qualquer sistema:
+
+```bash
 ollama pull qwen2.5:7b
 ```
 
@@ -46,7 +61,7 @@ ollama pull qwen2.5:7b
 
 Depois de instalar as dependencias:
 
-```powershell
+```bash
 python -m ingestion.vector_store
 ```
 
@@ -57,7 +72,7 @@ Esse comando le os arquivos em `data/raw`, gera chunks e cria o banco em
 
 Com o ambiente virtual ativado:
 
-```powershell
+```bash
 uvicorn api:app --reload --host 127.0.0.1 --port 8000
 ```
 
@@ -83,10 +98,21 @@ Exemplo de corpo para `POST /ask`:
 
 Em outro terminal:
 
+### Windows
+
 ```powershell
 cd frontend
 npm install
 copy .env.example .env
+npm run dev
+```
+
+### Linux
+
+```bash
+cd frontend
+npm install
+cp .env.example .env
 npm run dev
 ```
 
@@ -103,6 +129,19 @@ VITE_RAG_API_URL=http://127.0.0.1:8000
 ```
 
 Sem essa variavel, o frontend usa o mock local.
+
+## Execucao Completa
+
+Ordem recomendada para inicializar o projeto:
+
+1. Criar e ativar o ambiente virtual.
+2. Instalar as dependencias do backend.
+3. Baixar o modelo no Ollama.
+4. Gerar o banco vetorial com `python -m ingestion.vector_store`.
+5. Iniciar a API com `uvicorn api:app --reload --host 127.0.0.1 --port 8000`.
+6. Iniciar o frontend com `npm run dev` dentro da pasta `frontend`.
+
+Se estiver no Linux e o comando `python` nao existir no ambiente virtual, use `python3`.
 
 ## Funcionalidades do Frontend
 
