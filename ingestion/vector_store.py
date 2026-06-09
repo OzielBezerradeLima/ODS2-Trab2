@@ -3,7 +3,7 @@ import chromadb
 from chromadb.utils import embedding_functions
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 # Importamos as funções de ingestão criadas na Etapa 2
-from ingestion.ingestion import load_raw_documents, split_documents
+from ingestion import load_raw_documents, split_documents
 
 # ==============================================================================
 # CONFIGURAÇÕES DE DIRETÓRIOS E BANCO VETORIAL
