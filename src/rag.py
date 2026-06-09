@@ -57,7 +57,7 @@ def answer_question(question):
     return answer_question_detailed(question)["answer"]
 
 
-def answer_question_detailed(question, device="all", game="all", top_k=5):
+def answer_question_detailed(question, device="all", game="all", top_k=5, model_name="qwen2.5:7b"):
     results = search(
         question,
         top_k=top_k,
@@ -87,8 +87,9 @@ PERGUNTA:
 """
 
     try:
-        answer = format_answer(generate(prompt), results)
-        backend = "qwen2.5:7b"
+        answer = format_answer(generate(prompt, model_name=model_name), results)
+        
+        backend = model_name 
     except Exception as exc:
         answer = build_fallback_answer(question, results, exc)
         backend = "rag"
