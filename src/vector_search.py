@@ -77,7 +77,7 @@ def get_collection(with_embedding=True):
         global embedding_function
         if embedding_function is None:
             embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
-                model_name="all-MiniLM-L6-v2"
+                model_name="paraphrase-multilingual-MiniLM-L12-v2"
             )
 
         return client.get_collection(
@@ -156,7 +156,7 @@ def vector_search(question, filter_dict=None, top_k=5, device="all", topic="all"
                 "device": normalized["device"],
                 "document_type": normalized["document_type"],
                 "topic": normalized["topic"],
-                "score": max(0, 1 - distance),
+                "score": max(0, 1 - (distance / 2)),
             }
         )
 

@@ -16,7 +16,7 @@ COLLECTION_NAME = "hardware_optimization_knowledge"
 # ==============================================================================
 # Usamos o all-MiniLM-L6-v2 da HuggingFace, rodando localmente na máquina
 embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name="all-MiniLM-L6-v2"
+    model_name="paraphrase-multilingual-MiniLM-L12-v2"
 )
 
 # ==============================================================================
