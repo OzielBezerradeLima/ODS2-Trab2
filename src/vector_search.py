@@ -1,18 +1,23 @@
+import os
 import chromadb
 
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+CHROMA_PATH = os.path.join("data", "vector_store") 
+
 client = chromadb.PersistentClient(
-    path="vectorstore"
+    path=CHROMA_PATH
 )
 
 collection = client.get_collection(
-    "gearmind"
+    "hardware_optimization_knowledge"
 )
 
-def search(question):
+def search(question, filter_dict=None):
 
     results = collection.query(
         query_texts=[question],
         n_results=3,
+        where=filter_dict,
         include=[
             "documents",
             "metadatas",
@@ -31,9 +36,9 @@ def search(question):
         docs.append(
             {
                 "content": doc,
-                "source": meta["source"],
-                "page": meta["page"],
-                "document_type": meta["document_type"],
+                "source": meta.get("source_file", meta.get("source", "Origem desconhecida")),
+                "page": meta.get("page", 1),
+                "document_type": meta.get("category", "Categoria desconhecida"),
                 "score": 1 - distance
             }
         )
