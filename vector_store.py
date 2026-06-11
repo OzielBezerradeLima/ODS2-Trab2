@@ -69,7 +69,7 @@ def build_vector_store():
 # ==============================================================================
 # 3. IMPLEMENTAÇÃO DA FUNÇÃO DE BUSCA SEMÂNTICA (Exigida no Exemplo)
 # ==============================================================================
-def search(query: str, category_filter: str = None, top_k: int = 3):
+def search(query: str, category_filter: str = None, top_k: int = 5):
     """
     Realiza a busca por similaridade semântica no banco de dados.
     Permite filtrar opcionalmente por metadados (categoria do hardware/fonte).

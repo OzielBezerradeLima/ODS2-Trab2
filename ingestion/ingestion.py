@@ -96,12 +96,9 @@ def split_documents(documents):
     A estratégia usa separadores lógicos para tentar manter tabelas,
     tópicos e parágrafos de hardware sempre no mesmo bloco de contexto.
     """
-    # Tamanho do bloco: 600 caracteres (~150-200 tokens). 
-    # Bom para pegar especificações e instruções curtas sem misturar assuntos.
-    # Sobreposição (Overlap): 80 caracteres para garantir que frases na borda não percam o sentido.
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=600,
-        chunk_overlap=80,
+        chunk_size=800,
+        chunk_overlap=150,
         separators=["\n\n", "\n", " ", ""],
         length_function=len
     )
