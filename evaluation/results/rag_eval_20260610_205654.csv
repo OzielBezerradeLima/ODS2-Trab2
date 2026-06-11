@@ -1,0 +1,33 @@
+id,question,backend,fallback_used,latency_seconds,sources_count,avg_source_score,keyword_recall,source_hit_rate,rouge_l_f1,answer_completeness,refusal_correct
+ram-lenovo-loq-limite,Qual é o limite de RAM suportado pelo Lenovo LOQ?,qwen2.5:7b,False,88.802,5,0.4284,0.0,1.0,,1.0,1.0
+ram-lenovo-loq-tipo,O Lenovo LOQ usa memória DDR4 ou DDR5?,qwen2.5:7b,False,19.65,5,0.4613,0.75,1.0,,1.0,1.0
+ram-lenovo-loq-upgrade,Vale a pena fazer upgrade de RAM no Lenovo LOQ para melhorar jogos?,qwen2.5:7b,False,28.394,5,0.4267,1.0,1.0,,1.0,1.0
+ram-acer-nitro-limite,Qual o limite de memória RAM do Acer Nitro?,qwen2.5:7b,False,33.356,5,0.5089,1.0,1.0,,1.0,1.0
+ram-asus-tuf-upgrade,Como verificar se o Asus TUF aceita upgrade de memória?,qwen2.5:7b,False,21.188,5,0.5704,1.0,0.0,,1.0,1.0
+drivers-nvidia-atualizacao,Como atualizar o driver da NVIDIA para melhorar o desempenho em jogos?,qwen2.5:7b,False,29.126,5,0.1731,1.0,1.0,,1.0,1.0
+drivers-amd-adrenalin,O que devo observar ao usar o AMD Adrenalin em um notebook gamer?,qwen2.5:7b,False,22.207,5,0.2201,1.0,0.0,,1.0,1.0
+drivers-bios-cuidados,Quais cuidados devo tomar antes de atualizar a BIOS do notebook?,rag,False,1.379,0,0,0.25,0.0,,1.0,0.0
+drivers-rollback,Quando vale a pena voltar para uma versão anterior do driver de vídeo?,rag,False,1.328,0,0,0.25,0.0,,1.0,0.0
+elden-ring-stuttering,Como reduzir stuttering no Elden Ring?,qwen2.5:7b,False,28.49,5,0.1902,0.25,0.0,,1.0,1.0
+elden-ring-dlss,DLSS ajuda no Elden Ring em notebooks gamer?,rag,False,1.38,0,0,0.25,0.0,,1.0,0.0
+elden-ring-lenovo-loq,Que ajustes posso fazer para jogar Elden Ring melhor no Lenovo LOQ?,qwen2.5:7b,False,21.417,1,0.2666,0.75,0.0,,1.0,1.0
+valorant-asus-tuf-stuttering,Como resolver travamentos ou stuttering no Valorant usando um Asus TUF?,qwen2.5:7b,False,37.501,5,0.2663,0.75,0.0,,1.0,1.0
+fps-baixo-generico,O que fazer quando o FPS está baixo mesmo com o notebook conectado na tomada?,qwen2.5:7b,False,20.91,5,0.1847,0.5,1.0,,1.0,1.0
+temperatura-alta-generico,Quais ações ajudam a reduzir temperatura alta em notebook gamer?,qwen2.5:7b,False,19.695,5,0.2088,0.25,1.0,,1.0,1.0
+undervolt-conceito,O que é undervolt e como ele pode ajudar em notebooks gamer?,qwen2.5:7b,False,29.36,5,0.2781,0.75,1.0,,1.0,1.0
+undervolt-riscos,Quais são os riscos ou cuidados ao fazer undervolt?,qwen2.5:7b,False,43.385,5,0.2944,0.75,1.0,,1.0,1.0
+undervolt-asus-tuf,Undervolt pode ser uma alternativa para reduzir aquecimento no Asus TUF?,qwen2.5:7b,False,27.531,1,0.4218,0.75,0.0,,1.0,1.0
+compatibilidade-lenovo-loq-jogos,Como verificar se um jogo é compatível com o hardware do Lenovo LOQ?,qwen2.5:7b,False,26.999,5,0.281,1.0,1.0,,1.0,1.0
+compatibilidade-acer-nitro-jogos,O que devo comparar para saber se um Acer Nitro roda um jogo específico?,qwen2.5:7b,False,35.798,5,0.2141,1.0,1.0,,1.0,1.0
+otimizacao-plano-energia,Qual a importância do plano de energia para desempenho em jogos no notebook?,qwen2.5:7b,False,34.171,5,0.2319,0.75,1.0,,1.0,1.0
+otimizacao-modo-alto-desempenho,Devo usar modo alto desempenho para jogar em notebook gamer?,qwen2.5:7b,False,28.282,5,0.2067,0.5,1.0,,1.0,1.0
+otimizacao-fechar-programas,Fechar programas em segundo plano pode melhorar o desempenho em jogos?,qwen2.5:7b,False,29.041,5,0.198,0.75,1.0,,1.0,1.0
+fontes-manual-vs-comunidade,Quando a resposta deve priorizar manual técnico em vez de relatos de comunidade?,rag,False,1.4,0,0,0.0,1.0,,1.0,0.0
+comparacao-modelos-notebooks,"Compare Lenovo LOQ, Acer Nitro e Asus TUF em termos de upgrade e otimização.",qwen2.5:7b,False,30.506,7,0.2494,0.6,1.0,,1.0,1.0
+diagnostico-travamento-geral,Quais passos seguir para diagnosticar travamentos em jogos no notebook?,rag,False,1.404,0,0,0.25,1.0,,1.0,0.0
+diagnostico-sem-contexto-suficiente,"Meu jogo está ruim, o que faço?",rag,False,1.337,0,0,0.3333,1.0,,1.0,0.0
+fora-do-escopo-receita,Me ensine uma receita de bolo de chocolate.,rag,False,1.276,0,0,1.0,1.0,,1.0,1.0
+fora-do-escopo-medicina,Quais remédios devo tomar para dor de garganta?,rag,False,1.266,0,0,1.0,1.0,,1.0,1.0
+fora-do-escopo-financas,Qual ação devo comprar na bolsa hoje?,rag,False,1.229,0,0,1.0,1.0,,1.0,1.0
+fora-do-escopo-historia,Explique as causas da Segunda Guerra Mundial.,rag,False,1.224,0,0,1.0,1.0,,1.0,1.0
+fora-do-escopo-programacao,Escreva um código em Python para ordenar uma lista.,rag,False,1.213,0,0,1.0,1.0,,1.0,1.0

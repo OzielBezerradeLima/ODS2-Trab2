@@ -1,0 +1,1472 @@
+{
+  "summary": {
+    "total_questions": 32,
+    "avg_latency_seconds": 20.9452,
+    "avg_sources_count": 3.0938,
+    "avg_avg_source_score": 0.1963,
+    "avg_keyword_recall": 0.6698,
+    "avg_source_hit_rate": 0.7188,
+    "avg_answer_completeness": 1.0,
+    "avg_refusal_correct": 0.8125,
+    "avg_rouge_l_f1": null,
+    "fallback_rate": 0.0
+  },
+  "results": [
+    {
+      "id": "ram-lenovo-loq-limite",
+      "question": "Qual é o limite de RAM suportado pelo Lenovo LOQ?",
+      "answer": "Segundo o manual do usuário do Lenovo LOQ, pagina 43, o notebook suporta módulos DDR5 com até dois slots físicos.\n\nFontes utilizadas:\n- loq_ryzen7_stuttering.md - Pagina 1\n- driver_notes_nvidia.txt - Pagina 1\n- LEGION7.pdf - Pagina 43\n- AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf - Pagina 1\n- LEGIONPRO5.pdf - Pagina 14",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 88.802,
+      "sources_count": 5,
+      "avg_source_score": 0.4284,
+      "keyword_recall": 0.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "loq_ryzen7_stuttering.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "ram",
+          "content": "## Post Original (User: TechGamer_99):\nComprei um Lenovo LOQ (Ryzen 7, RTX 4060, 16GB RAM) e estou enfrentando micro-travamentos (stuttering) muito irritantes em jogos como Elden Ring e Cyberpunk 2077. O FPS médio fica alto (70-80 FPS no Ultra), mas do nada o frametime dá um pico e o jogo engasga por um milissegundo. O Windows foi recém-instalado e os drivers estão atualizados. Alguém sabe como resolver?\n---\n## Principais Respostas e Soluções da Comunidade:\n### Solução 1: Desativação do fTPM da AMD (A mais votada)\n**User: CoreMechanic:**",
+          "score": 0.45061909685954826
+        },
+        {
+          "source": "driver_notes_nvidia.txt",
+          "page": 1,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "ram",
+          "content": "Advanced Optimus switches dynamically from the Integrated GPU (iGPU) to the\nDedicated NVIDIA GPU (dGPU) during game launches.\n- [Hardware Monitor Tools] Popular background applications (such as MSI Afterburner)\nmight report incorrect memory clock speeds on specific factory-overclocked\nGeForce RTX 4060 Laptop GPUs.\n================================================================================",
+          "score": 0.44284271247461904
+        },
+        {
+          "source": "LEGION7.pdf",
+          "page": 43,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "open the static-protective package containing the part until the instructions direct you to install it.\nWhen you handle options or CRUs, or perform any work inside the computer, take the following precautions\nto avoid static-electricity damage:\n• Limit your movement. Movement can cause static electricity to build up around you.\n• Always handle components carefully. Handle adapters, memory modules, and other circuit boards by the\nedges. Never touch exposed circuitry.\n• Prevent others from touching components.",
+          "score": 0.43285257816587464
+        },
+        {
+          "source": "AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf",
+          "page": 1,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "ram",
+          "content": "Purple corruption may be observed while playing Dying Light 2 Stay Human: Reloaded\nEdition with Radeon™ Boost and Raytracing enabled.\nSome characters may appear invisible or have missing textures while playing Cossacks\n3.\nFlickering lights may be observed while playing Space Engineers in certain indoor\nenvironments.\nThe maximum memory tuning limit may be incorrectly reported on AMD Radeon™ RX\n7900 GRE graphics products.\nShader caching may fail for Windows usernames containing accented characters.\nFPS performance metric may incorrectly report values while a game is minimized.",
+          "score": 0.41155764746872636
+        },
+        {
+          "source": "LEGIONPRO5.pdf",
+          "page": 14,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "Battery pack\nItem\nValue or specification\nCapacity 80 Wh\nNote: The battery capacity is the typical or average capacity as measured in a\nspecific test environment. Capacities measured in other environments may differ\nbut are no lower than the rated capacity (see product label).\nNumber of cells 4\nMemory\nItem\nValue or specification\nType DDR5\nNumber of physical slots 2\nMass storage device\nItem\nValue or specification\nType Solid-state drive\nForm factor\n• M.2 (2242), or\n• M.2 (2280)\nInterface PCIe Gen4\nChapter 1 . Meet your computer 10",
+          "score": 0.4043388887126105
+        }
+      ]
+    },
+    {
+      "id": "ram-lenovo-loq-tipo",
+      "question": "O Lenovo LOQ usa memória DDR4 ou DDR5?",
+      "answer": "Segundo o arquivo LOQ15IRH8.pdf, a memória do Lenovo LOQ utiliza chips DDR5.\n\nFontes utilizadas:\n- loq_ryzen7_stuttering.md - Pagina 1\n- driver_notes_nvidia.txt - Pagina 1\n- LEGIONPRO5.pdf - Pagina 14\n- LOQ15IRH8.pdf - Pagina 13\n- LEGION7.pdf - Pagina 43",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 19.65,
+      "sources_count": 5,
+      "avg_source_score": 0.4613,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "loq_ryzen7_stuttering.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "ram",
+          "content": "## Post Original (User: TechGamer_99):\nComprei um Lenovo LOQ (Ryzen 7, RTX 4060, 16GB RAM) e estou enfrentando micro-travamentos (stuttering) muito irritantes em jogos como Elden Ring e Cyberpunk 2077. O FPS médio fica alto (70-80 FPS no Ultra), mas do nada o frametime dá um pico e o jogo engasga por um milissegundo. O Windows foi recém-instalado e os drivers estão atualizados. Alguém sabe como resolver?\n---\n## Principais Respostas e Soluções da Comunidade:\n### Solução 1: Desativação do fTPM da AMD (A mais votada)\n**User: CoreMechanic:**",
+          "score": 0.4955780276070122
+        },
+        {
+          "source": "driver_notes_nvidia.txt",
+          "page": 1,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "ram",
+          "content": "Advanced Optimus switches dynamically from the Integrated GPU (iGPU) to the\nDedicated NVIDIA GPU (dGPU) during game launches.\n- [Hardware Monitor Tools] Popular background applications (such as MSI Afterburner)\nmight report incorrect memory clock speeds on specific factory-overclocked\nGeForce RTX 4060 Laptop GPUs.\n================================================================================",
+          "score": 0.48659863237109047
+        },
+        {
+          "source": "LEGIONPRO5.pdf",
+          "page": 14,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "Battery pack\nItem\nValue or specification\nCapacity 80 Wh\nNote: The battery capacity is the typical or average capacity as measured in a\nspecific test environment. Capacities measured in other environments may differ\nbut are no lower than the rated capacity (see product label).\nNumber of cells 4\nMemory\nItem\nValue or specification\nType DDR5\nNumber of physical slots 2\nMass storage device\nItem\nValue or specification\nType Solid-state drive\nForm factor\n• M.2 (2242), or\n• M.2 (2280)\nInterface PCIe Gen4\nChapter 1 . Meet your computer 10",
+          "score": 0.44213824634343935
+        },
+        {
+          "source": "LOQ15IRH8.pdf",
+          "page": 13,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "Category Description\nBattery pack\n• 15–inch models\n– Capacity: 60 Wh\n– Number of cells: 4\n• 16–inch models\n– Capacity:\n– 60 Wh\n– 80 Wh\n*\n(for selected models)\n– Number of cells: 4\nNote: The battery capacity is the typical or average capacity as measured in a specific test\nenvironment. Capacities measured in other environments may differ but are no lower than the\nrated capacity (see product label).\nMicroprocessor To view the microprocessor information of your computer, type system information in the\nWindows search box and then press Enter.\nMemory",
+          "score": 0.44213824634343935
+        },
+        {
+          "source": "LEGION7.pdf",
+          "page": 43,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "open the static-protective package containing the part until the instructions direct you to install it.\nWhen you handle options or CRUs, or perform any work inside the computer, take the following precautions\nto avoid static-electricity damage:\n• Limit your movement. Movement can cause static electricity to build up around you.\n• Always handle components carefully. Handle adapters, memory modules, and other circuit boards by the\nedges. Never touch exposed circuitry.\n• Prevent others from touching components.",
+          "score": 0.440056016805602
+        }
+      ]
+    },
+    {
+      "id": "ram-lenovo-loq-upgrade",
+      "question": "Vale a pena fazer upgrade de RAM no Lenovo LOQ para melhorar jogos?",
+      "answer": "A base de dados fornecida não indica diretamente se um upgrade de RAM melhora o desempenho dos jogos no Lenovo LOQ. No entanto, considerando que o sistema possui 16GB de RAM e enfrenta micro-travamentos (stuttering), aumentar para 32GB ou mais pode ajudar a estabilizar o desempenho em jogos exigentes, especialmente se a atividade RAM ultrapassar os limites do atual setup. Fontes: loq_ryzen7_stuttering.md - Pagina 1\n\nFontes utilizadas:\n- loq_ryzen7_stuttering.md - Pagina 1\n- driver_notes_nvidia.txt - Pagina 1\n- LEGIONPRO5.pdf - Pagina 14\n- LOQ15IRH8.pdf - Pagina 13\n- LEGION7.pdf - Pagina 43",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 28.394,
+      "sources_count": 5,
+      "avg_source_score": 0.4267,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "loq_ryzen7_stuttering.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "ram",
+          "content": "## Post Original (User: TechGamer_99):\nComprei um Lenovo LOQ (Ryzen 7, RTX 4060, 16GB RAM) e estou enfrentando micro-travamentos (stuttering) muito irritantes em jogos como Elden Ring e Cyberpunk 2077. O FPS médio fica alto (70-80 FPS no Ultra), mas do nada o frametime dá um pico e o jogo engasga por um milissegundo. O Windows foi recém-instalado e os drivers estão atualizados. Alguém sabe como resolver?\n---\n## Principais Respostas e Soluções da Comunidade:\n### Solução 1: Desativação do fTPM da AMD (A mais votada)\n**User: CoreMechanic:**",
+          "score": 0.47968100654550305
+        },
+        {
+          "source": "driver_notes_nvidia.txt",
+          "page": 1,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "ram",
+          "content": "Advanced Optimus switches dynamically from the Integrated GPU (iGPU) to the\nDedicated NVIDIA GPU (dGPU) during game launches.\n- [Hardware Monitor Tools] Popular background applications (such as MSI Afterburner)\nmight report incorrect memory clock speeds on specific factory-overclocked\nGeForce RTX 4060 Laptop GPUs.\n================================================================================",
+          "score": 0.44284271247461904
+        },
+        {
+          "source": "LEGIONPRO5.pdf",
+          "page": 14,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "Battery pack\nItem\nValue or specification\nCapacity 80 Wh\nNote: The battery capacity is the typical or average capacity as measured in a\nspecific test environment. Capacities measured in other environments may differ\nbut are no lower than the rated capacity (see product label).\nNumber of cells 4\nMemory\nItem\nValue or specification\nType DDR5\nNumber of physical slots 2\nMass storage device\nItem\nValue or specification\nType Solid-state drive\nForm factor\n• M.2 (2242), or\n• M.2 (2280)\nInterface PCIe Gen4\nChapter 1 . Meet your computer 10",
+          "score": 0.4043388887126105
+        },
+        {
+          "source": "LOQ15IRH8.pdf",
+          "page": 13,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "Category Description\nBattery pack\n• 15–inch models\n– Capacity: 60 Wh\n– Number of cells: 4\n• 16–inch models\n– Capacity:\n– 60 Wh\n– 80 Wh\n*\n(for selected models)\n– Number of cells: 4\nNote: The battery capacity is the typical or average capacity as measured in a specific test\nenvironment. Capacities measured in other environments may differ but are no lower than the\nrated capacity (see product label).\nMicroprocessor To view the microprocessor information of your computer, type system information in the\nWindows search box and then press Enter.\nMemory",
+          "score": 0.4043388887126105
+        },
+        {
+          "source": "LEGION7.pdf",
+          "page": 43,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "open the static-protective package containing the part until the instructions direct you to install it.\nWhen you handle options or CRUs, or perform any work inside the computer, take the following precautions\nto avoid static-electricity damage:\n• Limit your movement. Movement can cause static electricity to build up around you.\n• Always handle components carefully. Handle adapters, memory modules, and other circuit boards by the\nedges. Never touch exposed circuitry.\n• Prevent others from touching components.",
+          "score": 0.402535625036333
+        }
+      ]
+    },
+    {
+      "id": "ram-acer-nitro-limite",
+      "question": "Qual o limite de memória RAM do Acer Nitro?",
+      "answer": "Infelizmente, as informações fornecidas não incluem detalhes específicos sobre o limite de memória RAM do Acer Nitro. As páginas consultadas se focam mais em problemas relacionados à memória RAM e suas correções, mas não mencionam explicitamente o limite de capacidade máxima suportada pelo dispositivo.\n\nFontes utilizadas:\n- PREDATORHELIOSNEO16SAI.pdf - Pagina 95\n- NITRO5.pdf - Pagina 86\n- NITROV16SAI.pdf - Pagina 94\n- PREDATORHELIOSNEO16SAI.pdf - Pagina 106\n- PREDATORHELIOSNEO16SAI.pdf - Pagina 70",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 33.356,
+      "sources_count": 5,
+      "avg_source_score": 0.5089,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "PREDATORHELIOSNEO16SAI.pdf",
+          "page": 95,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "96 - Leitor de cartão microSD\nNota\nOs cartões de memória SDXC apenas podem ser usados num leitor\ncompatível com SDXC; Cartões SD e SDHC podem ser usados em\nqualquer tipo.",
+          "score": 0.5640610178208842
+        },
+        {
+          "source": "NITRO5.pdf",
+          "page": 86,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "assistência autorizado.\nKeyboard interface\nerror\nContacte o seu revendedor ou um centro de\nassistência autorizado.\nMemory size\nmismatch\nPrima F2 (durante a operação POST) para\naceder ao utilitário BIOS e, de seguida,\nprima Exit no utilitário BIOS para\nreinicializar.\nMensagens de erro Ação corretiva",
+          "score": 0.506843987809648
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 94,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "de assistência autorizado.\nKeyboard interface\nerror\nContacte o seu revendedor ou um centro\nde assistência autorizado.\nMemory size\nmismatch\nPrima F2 (durante a operação POST) para\naceder ao utilitário BIOS e, de seguida,\nprima Exit no utilitário BIOS para\nreinicializar.\nMensagens de erro Ação corretiva",
+          "score": 0.506843987809648
+        },
+        {
+          "source": "PREDATORHELIOSNEO16SAI.pdf",
+          "page": 106,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "de assistência autorizado.\nKeyboard error or\nno keyboard\nconnected\nContacte o seu revendedor ou um centro\nde assistência autorizado.\nKeyboard\ninterface error\nContacte o seu revendedor ou um centro\nde assistência autorizado.\nMemory size\nmismatch\nPrima F2 (durante a operação POST)\npara aceder ao utilitário BIOS e, de\nseguida, prima Exit no utilitário BIOS\npara reinicializar.\nMensagens de\nerro\nAção corretiva",
+          "score": 0.49806170189140664
+        },
+        {
+          "source": "PREDATORHELIOSNEO16SAI.pdf",
+          "page": 70,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "PredatorSense - 71\nVerificação\nSelecione o separador [Checkup] (Verificação)  para avaliar\nrapidamente a saúde dos componentes do sistema, incluindo\na bateria, armazenamentos e RAM com um só clique -\n[Checkup All] (Verificação completa) . Pode também\nconsultar a saúde de forma individual clicando em [Check]\n(Verificar) sob cada variável.\n• [Battery] (Bateria)\nPara uma vista abrangente dos detalhes de utilização da\nbateria, clique em [ C h e c k  B a t t e r y  U s a g e ]  ( V e r i f i q u e  a\nutilização da bateria) . Para além disso, [Battery Power]",
+          "score": 0.4686066999241839
+        }
+      ]
+    },
+    {
+      "id": "ram-asus-tuf-upgrade",
+      "question": "Como verificar se o Asus TUF aceita upgrade de memória?",
+      "answer": "Para verificar se o seu Asus TUF aceita um upgrade de memória, consulte o Manual de serviço ou o Guia de atualização disponíveis no site da ASUS em vários idiomas. Lá você encontrará informações detalhadas sobre as especificações de memória compatíveis.\n\nFontes utilizadas:\n- ROGSTRIXG16.pdf - Pagina 89\n- UTFGAMINGF16.pdf - Pagina 59\n- ZEPHYRUSG16.pdf - Pagina 89\n- ROGSTRIXG16.pdf - Pagina 22\n- UTFGAMINGF16.pdf - Pagina 20",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 21.188,
+      "sources_count": 5,
+      "avg_source_score": 0.5704,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 89,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "• Desconecte os dispositivos USB não utilizados.\n• Feche os aplicativos não utilizados, especialmente aqueles\nque ocupam muita memória do sistema.",
+          "score": 0.5907055216465323
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 59,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "• Desconecte os dispositivos USB não utilizados.\n• Feche os aplicativos não utilizados, especialmente\naqueles que ocupam muita memória do sistema.",
+          "score": 0.5907055216465323
+        },
+        {
+          "source": "ZEPHYRUSG16.pdf",
+          "page": 89,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "• Desligue dispositivos USB que não estejam a ser utilizados.\n• Feche aplicações que não está a utilizar, especialmente as\nque ocupem muita memória de sistema.",
+          "score": 0.5650957468334666
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 22,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "(memória de acesso aleatório).\nNOTA:\n• Para obter mais detalhes, consulte o Manual de serviço em\nnosso site em vários idiomas\nhttps://www.asus.com/br/support.\n• O slot M.2 2280 não é compatível com a SSD SATA M.2.",
+          "score": 0.5527922024247862
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 20,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "(memória de acesso aleatório).\nNOTA:\n• Para obter mais detalhes, consulte o Guia de atualização em\nnosso site em vários idiomas\nhttps://www.asus.com/br/support/.\n• O slot M.2 2280 não é compatível com SSD SATA M.2.",
+          "score": 0.5527922024247862
+        }
+      ]
+    },
+    {
+      "id": "drivers-nvidia-atualizacao",
+      "question": "Como atualizar o driver da NVIDIA para melhorar o desempenho em jogos?",
+      "answer": "Para melhorar o desempenho em jogos, você deve atualizar o driver NVIDIA para a versão mais recente. O arquivo `driver_notes_nvidia.txt` menciona as versões v555.99 e v556.12 como adequadas para cartões GeForce RTX 40, 30 e 20 Series em sistemas Windows 10/11 64-bit. Essas atualizações oferecem otimizações de desempenho, estabilidade e melhoram a sincronização de quadros (frame pacing).\n\nFontes utilizadas:\n- driver_notes_nvidia.txt - Pagina 1\n- ROGSTRIXG16.pdf - Pagina 4\n- UTFGAMINGF16.pdf - Pagina 2",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 29.126,
+      "sources_count": 5,
+      "avg_source_score": 0.1731,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "driver_notes_nvidia.txt",
+          "page": 1,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "drivers",
+          "content": "================================================================================\nNVIDIA GEFORCE GAME READY DRIVER RELEASE NOTES (v555.99 / v556.12)\n================================================================================\nProduct Support: GeForce RTX 40 Series, RTX 30 Series, RTX 20 Series\nOperating System: Windows 10 64-bit, Windows 11 64-bit\nRelease Date: 2026\n--------------------------------------------------------------------------------\n1. GAME READY SUPERIORITY & NEW FEATURES\n--------------------------------------------------------------------------------",
+          "score": 0.20964074471043287
+        },
+        {
+          "source": "driver_notes_nvidia.txt",
+          "page": 1,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "drivers",
+          "content": "This new Game Ready Driver provides the optimal gaming experience for the latest\ntitles utilizing NVIDIA DLSS 3, DLSS 2, and Reflex technologies.\n- Optimized performance, stability, and frame pacing improvements for:\n* Elden Ring: Shadow of the Erdtree (Adds DLSS 3 Frame Generation support)\n* Senua's Saga: Hellblade II\n* Ghost of Tsushima Director's Cut\n--------------------------------------------------------------------------------\n2. FIXED ISSUES (Problemas Corrigidos neste Driver)\n--------------------------------------------------------------------------------",
+          "score": 0.18482848367219185
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 4,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "drivers",
+          "content": "5\nCapítulo 4: POST (Power-On Self-Test — autoteste ao ligar)\nO POST (Power-On Self-Test — autoteste ao ligar) .......................................82\nComo usar o POST para acessar o BIOS e Troubleshoot\n(Solução de problemas) ...............................................................................................82\nBIOS ................................................................................................................................82\nComo acessar o BIOS .....................................................................................................82",
+          "score": 0.16451542547285164
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 2,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "drivers",
+          "content": "Como usar o POST para acessar o BIOS e Troubleshoot (Solução de\nproblemas) ..............................................................................................54\nBIOS .................................................................................................... 54\nComo acessar o BIOS ............................................................................54\nComo recuperar o sistema ............................................................... 55\nComo executar uma opção de recuperação ........................................56",
+          "score": 0.16451542547285164
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 2,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "drivers",
+          "content": "Como desligar a tela quando não estiver em uso ...............................49\nComo ajustar o brilho da tela ................................................................50\nComo ocultar automaticamente a barra de tarefas ............................50\nOutros atalhos de teclado ................................................................. 51\nCapítulo 4: POST (Power-On Self-Test — autoteste ao ligar)\nO POST (Power-On Self-Test — autoteste ao ligar) ......................... 54\nComo usar o POST para acessar o BIOS e Troubleshoot (Solução de",
+          "score": 0.14213697660012
+        }
+      ]
+    },
+    {
+      "id": "drivers-amd-adrenalin",
+      "question": "O que devo observar ao usar o AMD Adrenalin em um notebook gamer?",
+      "answer": "Ao usar o AMD Adrenalin Edition 24.3.1 em um notebook gamer, é importante considerar as recomendações da AMD para drivers OEM específicos do fabricante do sistema. Esses drivers são customizados e validados para features e otimizações específicas do sistema. Se encontrar problemas, instale os drivers fornecidos pelo OEM para garantir o melhor suporte e compatibilidade.\n\nFontes utilizadas:\n- AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf - Pagina 1\n- AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf - Pagina 3\n- AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf - Pagina 5\n- AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf - Pagina 2",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 22.207,
+      "sources_count": 5,
+      "avg_source_score": 0.2201,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf",
+          "page": 1,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "drivers",
+          "content": "\n07/06/2026, 15:33 AMD Software: Adrenalin Edition 24.3.1 Release Notes\nhttps://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-24-3-1.html 1/8",
+          "score": 0.22824986333222025
+        },
+        {
+          "source": "AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf",
+          "page": 3,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "drivers",
+          "content": "07/06/2026, 15:33 AMD Software: Adrenalin Edition 24.3.1 Release Notes\nhttps://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-24-3-1.html 4/8",
+          "score": 0.22824986333222025
+        },
+        {
+          "source": "AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf",
+          "page": 5,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "drivers",
+          "content": "07/06/2026, 15:33 AMD Software: Adrenalin Edition 24.3.1 Release Notes\nhttps://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-24-3-1.html 6/8",
+          "score": 0.22824986333222025
+        },
+        {
+          "source": "AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf",
+          "page": 3,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "drivers",
+          "content": "Mobility Radeon™ Product Compatibility\nAMD Software: Adrenalin Edition 24.3.1 is a notebook reference graphics driver with limited\nsupport for system vendor specific features.\nAMD Processors with Radeon Graphics\nProduct Compatibility\nImportant Note for Laptop and All-In-One (AIO) PCs\nAMD recommends OEM-provided drivers which are customized and validated for their\nsystem-specific features and optimizations.\nIf you experience issues using the AMD Software: Adrenalin Edition driver package\ndownloaded from AMD.com, please install the OEM-provided drivers for full support and\ncompatibility.",
+          "score": 0.22762034939153686
+        },
+        {
+          "source": "AMD Software_ Adrenalin Edition 24.3.1 Release Notes.pdf",
+          "page": 2,
+          "device": "generic",
+          "document_type": "driver_notes",
+          "topic": "drivers",
+          "content": "the AMD software provided by this download.\nAMD Software: Adrenalin Edition 24.3.1 Driver for Windows® 10 & Windows® 11 64-bit\nSystems pairing RDNA series graphics products with Polaris or Vega series graphics\nproducts:\nAMD Software: Adrenalin Edition 24.3.1 Driver Including Vega and Polaris Series\nGraphics Support for Windows® 10 & Windows® 11 64-bit\nInstalling AMD Software: Adrenalin Edition\nFor detailed instructions on how to correctly uninstall or install AMD Software: Adrenalin\nEdition, please refer to the following support resources:",
+          "score": 0.18798984943120778
+        }
+      ]
+    },
+    {
+      "id": "drivers-bios-cuidados",
+      "question": "Quais cuidados devo tomar antes de atualizar a BIOS do notebook?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.379,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 0.25,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 0.0,
+      "sources": []
+    },
+    {
+      "id": "drivers-rollback",
+      "question": "Quando vale a pena voltar para uma versão anterior do driver de vídeo?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.328,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 0.25,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 0.0,
+      "sources": []
+    },
+    {
+      "id": "elden-ring-stuttering",
+      "question": "Como reduzir stuttering no Elden Ring?",
+      "answer": "Para reduzir o stuttering em jogos pesados como Elden Ring, pode-se seguir as recomendações da comunidade:\n\n1. Certifique-se de que o notebook está ligeiramente elevado na traseira para melhorar a ventilação e evitar thermal throttling.\n2. Desative o overlay do Discord e o 'In-Game Overlay' do GeForce Experience no MSI Afterburner, pois podem causar conflitos de hooks de renderização.\n\nEstas soluções têm ajudado outros usuários com problemas similares em notebooks Ryzen.\n\nFontes utilizadas:\n- loq_ryzen7_stuttering.md - Pagina 1\n- UTFGAMINGF16.pdf - Pagina 10\n- ZEPHYRUSG16.pdf - Pagina 11\n- ROGSTRIXG16.pdf - Pagina 11",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 28.49,
+      "sources_count": 5,
+      "avg_source_score": 0.1902,
+      "keyword_recall": 0.25,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "loq_ryzen7_stuttering.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "performance",
+          "content": "---\ndevice: Lenovo LOQ 15 (Ryzen 7 7840HS / RTX 4060)\nsource: Reddit - r/LenovoLOQ\ntopic: Micro-stutters e quedas de frame pacing em jogos pesados\nstatus: Solucionado pela Comunidade\n---\n# Problema: Quedas bruscas de FPS (1% Lows) e Stuttering no LOQ Ryzen 7\n## Post Original (User: TechGamer_99):",
+          "score": 0.2935042050734495
+        },
+        {
+          "source": "loq_ryzen7_stuttering.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "performance",
+          "content": "> 3. Certifique-se de que o notebook está ligeiramente elevado na traseira para melhorar o fluxo de ar, impedindo o thermal throttling que engasga o jogo.\"\n### Solução 3: Conflito com Overlays de Terceiros\n**User: FramePacer_Pro:**\n> \"Se você estiver usando o MSI Afterburner junto com o overlay do Discord e o GeForce Experience ao mesmo tempo, as hooks de renderização vão brigar e causar stuttering. Desative o overlay de tela do Discord e o 'In-Game Overlay' do GeForce Experience nas configurações gerais.\"",
+          "score": 0.263147418598252
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 10,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "capacidade de carga da bateria e encurtar rapidamente a\nsua vida útil. Se a temperatura da bateria estiver muito alta,\no sistema pode reduzir a capacidade de carregamento da\nbateria ou mesmo interromper o carregamento para proteger\na bateria.\n• A capacidade da bateria pode diminuir, mesmo quando seu\ndispositivo estiver desligado e desconectado da alimentação\nCA. Isso é normal, pois o sistema ainda consome uma\npequena quantidade de energia da bateria.",
+          "score": 0.13205792062953536
+        },
+        {
+          "source": "ZEPHYRUSG16.pdf",
+          "page": 11,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "capacidade da bateria e encurtar rapidamente a sua durabilidade.\nSe a temperatura da bateria for demasiado elevada, o sistema\npode reduzir a capacidade de carregamento da bateria ou até\ninterromper o carregamento para proteger a bateria.\n• A capacidade da bateria pode diminuir mesmo quando o\ndispositivo está desligado e sem o transformador CA. Esta é\numa situação normal, pois o sistema continua a consumir uma\npequena quantidade de energia da bateria.\nInformações de segurança da bateria",
+          "score": 0.13143444998736398
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 11,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "de carga da bateria e encurtar rapidamente a sua vida útil. Se a\ntemperatura da bateria estiver muito alta, o sistema pode reduzir\na capacidade de carregamento da bateria ou mesmo interromper\no carregamento para proteger a bateria.\n• A capacidade da bateria pode diminuir, mesmo quando seu\ndispositivo estiver desligado e desconectado da alimentação\nCA. Isso é normal, pois o sistema ainda consome uma pequena\nquantidade de energia da bateria.\nInformações de segurança da bateria",
+          "score": 0.1308328567775349
+        }
+      ]
+    },
+    {
+      "id": "elden-ring-dlss",
+      "question": "DLSS ajuda no Elden Ring em notebooks gamer?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.38,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 0.25,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 0.0,
+      "sources": []
+    },
+    {
+      "id": "elden-ring-lenovo-loq",
+      "question": "Que ajustes posso fazer para jogar Elden Ring melhor no Lenovo LOQ?",
+      "answer": "- Para evitar crashes (CTD) aleatórios durante o Elden Ring em seu Lenovo LOQ, certifique-se de que o DLSS Frame Generation combinado com o Reflex Boost esteja funcionando corretamente.\n- Também verifique se o modo G-Sync está desativado para evitar possíveis problemas de piscar na tela.\n\nFontes utilizadas:\n- driver_notes_nvidia.txt - Pagina 1",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 21.417,
+      "sources_count": 1,
+      "avg_source_score": 0.2666,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "driver_notes_nvidia.txt",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "driver_notes",
+          "topic": "elden_ring",
+          "content": "- [Ghost of Tsushima Director's Cut] Fixed random desktop crashes (CTD) when\ncombining DLSS Frame Generation with Reflex Boost on specific hardware setups.\n- [Notebook Displays] Fixed screen flickering issues on certain high-refresh-rate\npanels (144Hz/165Hz) used in Lenovo LOQ and Acer Nitro laptops when G-Sync\nwas active in windowed mode.\n- [Discord] Video streaming or screen-sharing gameplay might exhibit slight color\ncorruption or artifacting when hardware acceleration is toggled on.\n--------------------------------------------------------------------------------",
+          "score": 0.26660035817780525
+        }
+      ]
+    },
+    {
+      "id": "valorant-asus-tuf-stuttering",
+      "question": "Como resolver travamentos ou stuttering no Valorant usando um Asus TUF?",
+      "answer": "Infelizmente, as informações fornecidas não abordam diretamente o problema de travamentos ou stuttering em jogos como Valorant. As fontes focam mais em problemas visuais na tela e orientações gerais sobre desempenho do sistema. Para resolver esses travamentos, seria recomendável verificar a configuração da placa de vídeo, atualizar drivers, ajustar as configurações de jogo para um nível mais baixo ou melhorar a configuração térmica do notebook.\n\nFontes utilizadas:\n- ZEPHYRUSG16.pdf - Pagina 89\n- UTFGAMINGF16.pdf - Pagina 59\n- ROGSTRIXG16.pdf - Pagina 89\n- ZEPHYRUSG16.pdf - Pagina 102\n- ROGSTRIXG16.pdf - Pagina 82",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 37.501,
+      "sources_count": 5,
+      "avg_source_score": 0.2663,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "ZEPHYRUSG16.pdf",
+          "page": 89,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "90\nPerguntas frequentes sobre hardware\n1. Aparece um ponto negro, ou por vezes um ponto colorido, no\necrã quando ligo o PC portátil. O que devo fazer?\nApesar de estes pontos aparecerem normalmente no ecrã, estes\nnão irão afetar o seu sistema. Se o incidente persistir e vier mais\ntarde a afetar o desempenho do sistema, consulte um centro de\nassistência ASUS autorizado.\n2. O meu ecrã apresenta cor e brilho irregulares. Como posso\nresolver esta situação?\nA cor e o brilho do seu ecrã poderão ser afetados pelo ângulo\ne posição atuais do seu PC portátil. O brilho e os tons de cor do",
+          "score": 0.3054785934906616
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 59,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "60\nPerguntas frequentes sobre hardware\n1. Um ponto preto ou, às vezes, um ponto colorido, aparece na\ntela quando eu ligo o notebook. O que devo fazer?\nEmbora esses pontos normalmente apareçam na tela, eles\nnão afetarão o sistema. Se o incidente continuar e acabar\nafetando o desempenho do sistema, consulte um revendedor\nautorizado do centro de serviço da ASUS.\n2. Meu painel de exibição está com cor e brilho desiguais.\nComo posso corrigir isso?\nA cor e o brilho do seu painel de exibição podem ser afetados\npelo ângulo e pela posição atuais do notebook. O brilho e",
+          "score": 0.2691089451179962
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 89,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "90\nPerguntas frequentes sobre hardware\n1. Um ponto preto ou, às vezes, um ponto colorido, aparece na\ntela quando eu ligo o notebook. O que devo fazer?\nEmbora esses pontos normalmente apareçam na tela, eles não\nafetarão o sistema. Se o incidente continuar e acabar afetando o\ndesempenho do sistema, consulte um revendedor autorizado do\ncentro de serviço da ASUS.\n2. Meu painel de exibição está com cor e brilho desiguais. Como\nposso corrigir isso?\nA cor e o brilho do seu painel de exibição podem ser afetados\npelo ângulo e pela posição atuais do notebook. O brilho e o tom",
+          "score": 0.26825317547305483
+        },
+        {
+          "source": "ZEPHYRUSG16.pdf",
+          "page": 102,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "certificação de cada país/região.\nDiretiva \"Conceção Ecológica\"\nA União Europeia anunciou a criação de uma estrutura para a definição\nde requisitos de conceção ecológica de produtos que consomem energia\n(2009/125/CE). As medidas específicas implementadas destinam-se a melhorar o\ndesempenho ambiental de produtos específicos ou de vários tipos de produtos. A\nASUS fornece informações sobre o produto em\nhttps://esg.asus.com/Compliance.htm.",
+          "score": 0.24606629658238705
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 82,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "83\nComo recuperar o sistema\nA utilização de opções de recuperação no notebook permite restaurar o\nsistema ao estado original ou simplesmente atualizar as configurações\npara ajudar a melhorar o desempenho.\nIMPORTANTE!\n• Faça backup de todos os arquivos de dados antes de executar\nqualquer opção de recuperação no notebook.\n• Anote configurações personalizadas importantes, como\nconfigurações de rede, nomes de usuário e senhas, para evitar perda\nde dados.\n• Certifique-se de que o notebook esteja conectado a uma fonte de\nalimentação antes de reiniciar o sistema.",
+          "score": 0.24247860988423225
+        }
+      ]
+    },
+    {
+      "id": "fps-baixo-generico",
+      "question": "O que fazer quando o FPS está baixo mesmo com o notebook conectado na tomada?",
+      "answer": "As informações fornecidas não abordam diretamente esse problema. Para soluções relacionadas ao desempenho do jogo, consulte a seção de configurações gráficas ou drivers atualizados no manual do usuário ou visite os recursos oficiais da ASUS.\n\nFontes utilizadas:\n- UTFGAMINGF16.pdf - Pagina 16\n- UTFGAMINGF16.pdf - Pagina 60\n- UTFGAMINGF16.pdf - Pagina 62\n- ROGSTRIXG16.pdf - Pagina 91\n- UTFGAMINGF16.pdf - Pagina 61",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 20.91,
+      "sources_count": 5,
+      "avg_source_score": 0.1847,
+      "keyword_recall": 0.5,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 16,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "17\nCor Status\nBranco sólido O notebook está conectado a\numa fonte de energia e a carga\nda bateria está em 100%.\nLaranja sólido O notebook está conectado\na uma fonte de energia,\ncarregando sua bateria, e a\ncarga da bateria está entre 0%\ne 99%.\nLaranja\nintermitente\nO notebook está no modo de\nbateria e a carga da bateria\nestá inferior a 10%.\nDesligado O notebook está no modo de\nbateria e a carga da bateria\nestá entre 10% e 100%.\nIndicador de atividade da unidade\nEste indicador acende quando o notebook está\nacessando as unidades de armazenamento interno.\nIndicador do Airplane mode (modo Avião)",
+          "score": 0.21081851067789195
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 60,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "61\n4. Meu indicador de carga da bateria não acende. O que há de\nerrado?\n• Verifique se o adaptador de energia ou a bateria\nestão instalados corretamente. Você também pode\ndesconectar o adaptador de energia ou a bateria,\naguardar um minuto e reconectá-los novamente na\ntomada de energia e no notebook.\n• Se o problema persistir, entre em contato com o centro\nde serviço da ASUS para obter assistência.\n5. Por que meu touchpad não está funcionando?\nPressione <Fn>+<F10> para ativar o touchpad.\n6. Quando vou reproduzir arquivos de áudio e vídeo, por que",
+          "score": 0.1797866299901979
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 62,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "ram",
+          "content": "2. O que devo fazer quando minha tela exibe esta mensagem:\n\"Remova discos ou mídia. Pressione qualquer tecla para\nreiniciar. \"?\nVocê pode tentar uma destas sugestões:\n• Remova todos os dispositivos USB conectados e reinicie\no notebook.\n• Remova todos discos ópticos de dentro da unidade\nóptica e reinicie.\n• Se o problema persistir, seu notebook pode estar com\num problema de armazenamento de memória. Entre em\ncontato com o centro de serviço da ASUS para obter\nassistência.",
+          "score": 0.1797866299901979
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 91,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "92\n8. Meu notebook não registra os pressionamentos de teclas\ncorretamente porque o meu cursor fica se movendo. O que\ndevo fazer?\nCertifique-se de que nada toque ou pressione o touchpad\nacidentalmente enquanto você digita no teclado. Você também\npode desativar o touchpad pressionando .\n9. Eu desativei o modo de suspensão, mas por que meu\nnotebook ainda entra em modo de suspensão quando fecho\na tampa?\nFechar a tampa quando o sistema está sob alta carga força\nseu notebook a entrar no modo de suspensão para evitar o\nsuperaquecimento.",
+          "score": 0.1781741612749496
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 61,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "62\n8. Meu notebook não registra os pressionamentos de teclas\ncorretamente porque o meu cursor fica se movendo. O que\ndevo fazer?\nCertifique-se de que nada toque ou pressione o touchpad\nacidentalmente enquanto você digita no teclado. Você\ntambém pode desativar o touchpad pressionando\n<Fn>+<F10>.\n9. Eu desativei o modo de suspensão, mas por que meu\nnotebook ainda entra em modo de suspensão quando fecho\na tampa?\nFechar a tampa quando o sistema está sob alta carga força\nseu notebook a entrar no modo de suspensão para evitar o\nsuperaquecimento.",
+          "score": 0.1750752438129634
+        }
+      ]
+    },
+    {
+      "id": "temperatura-alta-generico",
+      "question": "Quais ações ajudam a reduzir temperatura alta em notebook gamer?",
+      "answer": "Não deixe o notebook em ambientes muito quentes, evite colocá-lo próximos de fontes de calor como radiadores e lareiras. Além disso, mantenha-o longe de áreas úmidas para prevenir a descarga excessiva da bateria.\n\nFontes utilizadas:\n- UTFGAMINGF16.pdf - Pagina 10\n- ROGSTRIXG16.pdf - Pagina 11\n- ZEPHYRUSG16.pdf - Pagina 11\n- UTFGAMINGF16.pdf - Pagina 11\n- ROGSTRIXG16.pdf - Pagina 12",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 19.695,
+      "sources_count": 5,
+      "avg_source_score": 0.2088,
+      "keyword_recall": 0.25,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 10,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "capacidade de carga da bateria e encurtar rapidamente a\nsua vida útil. Se a temperatura da bateria estiver muito alta,\no sistema pode reduzir a capacidade de carregamento da\nbateria ou mesmo interromper o carregamento para proteger\na bateria.\n• A capacidade da bateria pode diminuir, mesmo quando seu\ndispositivo estiver desligado e desconectado da alimentação\nCA. Isso é normal, pois o sistema ainda consome uma\npequena quantidade de energia da bateria.",
+          "score": 0.2456472891122698
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 11,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "de carga da bateria e encurtar rapidamente a sua vida útil. Se a\ntemperatura da bateria estiver muito alta, o sistema pode reduzir\na capacidade de carregamento da bateria ou mesmo interromper\no carregamento para proteger a bateria.\n• A capacidade da bateria pode diminuir, mesmo quando seu\ndispositivo estiver desligado e desconectado da alimentação\nCA. Isso é normal, pois o sistema ainda consome uma pequena\nquantidade de energia da bateria.\nInformações de segurança da bateria",
+          "score": 0.2417491598051576
+        },
+        {
+          "source": "ZEPHYRUSG16.pdf",
+          "page": 11,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "capacidade da bateria e encurtar rapidamente a sua durabilidade.\nSe a temperatura da bateria for demasiado elevada, o sistema\npode reduzir a capacidade de carregamento da bateria ou até\ninterromper o carregamento para proteger a bateria.\n• A capacidade da bateria pode diminuir mesmo quando o\ndispositivo está desligado e sem o transformador CA. Esta é\numa situação normal, pois o sistema continua a consumir uma\npequena quantidade de energia da bateria.\nInformações de segurança da bateria",
+          "score": 0.18910894511799617
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 11,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "a ambientes úmidos pode aumentar a taxa de descarga\nexcessiva da bateria. Ambientes de baixa temperatura\npodem danificar as substâncias químicas dentro da bateria,\nenquanto a alta temperatura ou o superaquecimento pode\nresultar em risco de explosão.\n• Não coloque o dispositivo ou a bateria perto de radiadores,\nlareiras, fornos, aquecedores ou qualquer fonte de calor\ncom temperatura superior a 60 °C (140 °F). Um ambiente\nde alta temperatura próximo pode resultar em explosão ou\nvazamento que pode causar incêndio.",
+          "score": 0.18540925533894598
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 12,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "• Não deixe sua bateria em ambientes úmidos. A exposição a\nambientes úmidos pode aumentar a taxa de descarga excessiva\nda bateria. Ambientes de baixa temperatura podem danificar\nas substâncias químicas dentro da bateria, enquanto a alta\ntemperatura ou o superaquecimento pode resultar em risco de\nexplosão.\n• Não coloque o dispositivo ou a bateria perto de radiadores,\nlareiras, fornos, aquecedores ou qualquer fonte de calor com\ntemperatura superior a 60 °C (140 °F). Um ambiente de alta\ntemperatura próximo pode resultar em explosão ou vazamento\nque pode causar incêndio.",
+          "score": 0.18206207261596574
+        }
+      ]
+    },
+    {
+      "id": "undervolt-conceito",
+      "question": "O que é undervolt e como ele pode ajudar em notebooks gamer?",
+      "answer": "Undervolt é um processo que reduz a voltagem fornecida ao processador, permitindo que o chip opere com menos energia. Isto ajuda a diminuir as temperaturas do hardware, reduzir o consumo de bateria e pode até mesmo melhorar a estabilidade em jogos pesados. Em notebooks gamers, undervolt pode ser utilizado para mitigar o thermal throttling, permitindo que os componentes funcionem mais eficientemente sem superaquecer.\n\nFontes utilizadas:\n- guide_to_undervolting_cpu_with_lenovo_vantage_app.md - Pagina 1",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 29.36,
+      "sources_count": 5,
+      "avg_source_score": 0.2781,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "---\ndevice: Lenovo LOQ (Gerações Intel Core - Ex: 13ª e 14ª Geração)\nsource: Reddit - r/LenovoLOQ\ntopic: Guia de Undervolt de CPU via Lenovo Vantage para Controle Térmico\nstatus: Consolidador / Guia Prático\n---\n# Guia Comunitário: Como Fazer Undervolt na CPU pelo Lenovo Vantage\n## Post Original (User: NotebookCoolingPro):",
+          "score": 0.33649458802128857
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "## Post Original (User: NotebookCoolingPro):\nMuitos donos de Lenovo LOQ sofrem com thermal throttling, vendo as temperaturas da CPU baterem 95°C-98°C facilmente em jogos pesados como Helldivers 2 ou Cyberpunk 2077. Este guia explica como usar o próprio software oficial de fábrica (*Lenovo Vantage*) para fazer um undervolt seguro e reduzir as temperaturas em até 10°C-15°C sem perder desempenho (e em alguns casos, ganhando estabilidade de FPS).\n---\n## Passo a Passo para Aplicação do Undervolt:\n### Passo 1: Desativar o \"Undervolt Protection\" na BIOS",
+          "score": 0.28412414523193147
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "generic",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "### Passo 3: Ajustando o Core Voltage Offset (O Undervolt Técnico)\n**Atenção:** O objetivo é reduzir a voltagem para o chip trabalhar mais frio. O valor deve ser **NEGATIVO**.\n* Procure pelo slider **CPU Core Voltage Offset**.\n* Mova o slider cuidadosamente para valores negativos.\n* **Ponto de partida seguro recomendado pela comunidade:** Comece com **-50mV** (ou `-0.050V`).\n* Se o sistema ficar estável após algumas horas de jogo, você pode tentar descer para **-80mV** (`-0.080V`) ou até **-100mV** (`-0.100V`), que é o \"sweet spot\" (ponto ideal) da maioria dos chips Intel de notebook.\n---",
+          "score": 0.27611613513818406
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "### Passo 2: Configuração no Lenovo Vantage\nCom a BIOS desbloqueada, o painel do Vantage vai liberar os sliders de controle de energia:\n1. Abra o aplicativo **Lenovo Vantage** no Windows.\n2. Na tela inicial, mude o Thermal Mode para **Custom** (Modo Personalizado).\n3. Uma tela de aviso sobre overclock/undervolt vai aparecer; clique em aceitar.\n4. Role a página até encontrar a seção **CPU Overclock** e ative a chave (Toggle).\n5. Clique em **Advanced Settings** (Configurações Avançadas) para abrir os sliders de voltagem.\n### Passo 3: Ajustando o Core Voltage Offset (O Undervolt Técnico)",
+          "score": 0.2505605730844883
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "### Passo 1: Desativar o \"Undervolt Protection\" na BIOS\nAntes de mexer no software, você precisa dar permissão para o sistema alterar as tensões:\n1. Reinicie o notebook e fique pressionando a tecla **F2** repetidamente para entrar na BIOS.\n2. Vá até a aba **Advanced** ou **More Settings**.\n3. Procure pela opção **Undervolt Protection** e mude para **Disabled** (Desativado).\n4. Procure também por **Core Voltage Offset** ou **Overclocking Feature** e mude para **Enabled** (Ativado).\n5. Pressione **F10** para salvar as alterações e reiniciar o Windows.\n### Passo 2: Configuração no Lenovo Vantage",
+          "score": 0.24329931618554518
+        }
+      ]
+    },
+    {
+      "id": "undervolt-riscos",
+      "question": "Quais são os riscos ou cuidados ao fazer undervolt?",
+      "answer": "Os riscos e cuidados ao fazer undervolt incluem a possibilidade de instabilidade do sistema, redução da estabilidade dos FPS durante jogos intensivos, e o fato de que valores negativos muito baixos podem danificar permanentemente o processador. É recomendado começar com uma redução pequena (como -50mV) e aumentar gradualmente até encontrar um equilíbrio entre desempenho e estabilidade térmica. Fontes: *guide_to_undervolting_cpu_with_lenovo_vantage_app.md* - Pagina 1\n\nFontes utilizadas:\n- guide_to_undervolting_cpu_with_lenovo_vantage_app.md - Pagina 1",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 43.385,
+      "sources_count": 5,
+      "avg_source_score": 0.2944,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "---\ndevice: Lenovo LOQ (Gerações Intel Core - Ex: 13ª e 14ª Geração)\nsource: Reddit - r/LenovoLOQ\ntopic: Guia de Undervolt de CPU via Lenovo Vantage para Controle Térmico\nstatus: Consolidador / Guia Prático\n---\n# Guia Comunitário: Como Fazer Undervolt na CPU pelo Lenovo Vantage\n## Post Original (User: NotebookCoolingPro):",
+          "score": 0.33649458802128857
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "## Post Original (User: NotebookCoolingPro):\nMuitos donos de Lenovo LOQ sofrem com thermal throttling, vendo as temperaturas da CPU baterem 95°C-98°C facilmente em jogos pesados como Helldivers 2 ou Cyberpunk 2077. Este guia explica como usar o próprio software oficial de fábrica (*Lenovo Vantage*) para fazer um undervolt seguro e reduzir as temperaturas em até 10°C-15°C sem perder desempenho (e em alguns casos, ganhando estabilidade de FPS).\n---\n## Passo a Passo para Aplicação do Undervolt:\n### Passo 1: Desativar o \"Undervolt Protection\" na BIOS",
+          "score": 0.32494897427831776
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "### Passo 1: Desativar o \"Undervolt Protection\" na BIOS\nAntes de mexer no software, você precisa dar permissão para o sistema alterar as tensões:\n1. Reinicie o notebook e fique pressionando a tecla **F2** repetidamente para entrar na BIOS.\n2. Vá até a aba **Advanced** ou **More Settings**.\n3. Procure pela opção **Undervolt Protection** e mude para **Disabled** (Desativado).\n4. Procure também por **Core Voltage Offset** ou **Overclocking Feature** e mude para **Enabled** (Ativado).\n5. Pressione **F10** para salvar as alterações e reiniciar o Windows.\n### Passo 2: Configuração no Lenovo Vantage",
+          "score": 0.28412414523193147
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "generic",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "### Passo 3: Ajustando o Core Voltage Offset (O Undervolt Técnico)\n**Atenção:** O objetivo é reduzir a voltagem para o chip trabalhar mais frio. O valor deve ser **NEGATIVO**.\n* Procure pelo slider **CPU Core Voltage Offset**.\n* Mova o slider cuidadosamente para valores negativos.\n* **Ponto de partida seguro recomendado pela comunidade:** Comece com **-50mV** (ou `-0.050V`).\n* Se o sistema ficar estável após algumas horas de jogo, você pode tentar descer para **-80mV** (`-0.080V`) ou até **-100mV** (`-0.100V`), que é o \"sweet spot\" (ponto ideal) da maioria dos chips Intel de notebook.\n---",
+          "score": 0.27611613513818406
+        },
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "### Passo 2: Configuração no Lenovo Vantage\nCom a BIOS desbloqueada, o painel do Vantage vai liberar os sliders de controle de energia:\n1. Abra o aplicativo **Lenovo Vantage** no Windows.\n2. Na tela inicial, mude o Thermal Mode para **Custom** (Modo Personalizado).\n3. Uma tela de aviso sobre overclock/undervolt vai aparecer; clique em aceitar.\n4. Role a página até encontrar a seção **CPU Overclock** e ative a chave (Toggle).\n5. Clique em **Advanced Settings** (Configurações Avançadas) para abrir os sliders de voltagem.\n### Passo 3: Ajustando o Core Voltage Offset (O Undervolt Técnico)",
+          "score": 0.2505605730844883
+        }
+      ]
+    },
+    {
+      "id": "undervolt-asus-tuf",
+      "question": "Undervolt pode ser uma alternativa para reduzir aquecimento no Asus TUF?",
+      "answer": "Sim, o undervolt pode ser uma alternativa eficaz para reduzir o aquecimento no Asus TUF. Com base na documentação do Lenovo Vantage App, você pode começar com um valor de -50mV e ajustar gradualmente até encontrar o ponto ideal que garanta estabilidade durante as atividades, como jogos. No entanto, verifique se a BIOS do seu dispositivo oferece suporte a essa funcionalidade antes de proceder.\n\nFontes utilizadas:\n- guide_to_undervolting_cpu_with_lenovo_vantage_app.md - Pagina 1",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 27.531,
+      "sources_count": 1,
+      "avg_source_score": 0.4218,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 0.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "guide_to_undervolting_cpu_with_lenovo_vantage_app.md",
+          "page": 1,
+          "device": "generic",
+          "document_type": "forum",
+          "topic": "undervolt",
+          "content": "### Passo 3: Ajustando o Core Voltage Offset (O Undervolt Técnico)\n**Atenção:** O objetivo é reduzir a voltagem para o chip trabalhar mais frio. O valor deve ser **NEGATIVO**.\n* Procure pelo slider **CPU Core Voltage Offset**.\n* Mova o slider cuidadosamente para valores negativos.\n* **Ponto de partida seguro recomendado pela comunidade:** Comece com **-50mV** (ou `-0.050V`).\n* Se o sistema ficar estável após algumas horas de jogo, você pode tentar descer para **-80mV** (`-0.080V`) ou até **-100mV** (`-0.100V`), que é o \"sweet spot\" (ponto ideal) da maioria dos chips Intel de notebook.\n---",
+          "score": 0.4217851572023681
+        }
+      ]
+    },
+    {
+      "id": "compatibilidade-lenovo-loq-jogos",
+      "question": "Como verificar se um jogo é compatível com o hardware do Lenovo LOQ?",
+      "answer": "Infelizmente, as informações fornecidas não abordam diretamente como verificar a compatibilidade de jogos com o hardware do Lenovo LOQ. O conteúdo das páginas consultadas se concentra em garantias e acessórios.\n\nFontes utilizadas:\n- LOQ15IRH8.pdf - Pagina 1\n- LEGION7.pdf - Pagina 1\n- LOQ15IAX9.pdf - Pagina 1\n- LOQ15IRH8.pdf - Pagina 31\n- LEGIONPRO5.pdf - Pagina 21",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 26.999,
+      "sources_count": 5,
+      "avg_source_score": 0.281,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "LOQ15IRH8.pdf",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "User Guide\nLenovo LOQ Series",
+          "score": 0.3157022603955158
+        },
+        {
+          "source": "LEGION7.pdf",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "User Guide\nLenovo Legion 7 (15″, 05)",
+          "score": 0.2932007163556104
+        },
+        {
+          "source": "LOQ15IAX9.pdf",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "User Guide\nLenovo LOQ 15AHP9, Lenovo LOQ 15ARP9, Lenovo LOQ 15IAX9,\nLenovo LOQ 15IAX9I, and Lenovo LOQ 15IRX9",
+          "score": 0.2689822365046136
+        },
+        {
+          "source": "LOQ15IRH8.pdf",
+          "page": 31,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "• Installation and maintenance of programs\nFor the terms and conditions of the Lenovo Limited Warranty that apply to your Lenovo hardware product,\nsee “Warranty information” in the Safety and Warranty Guide that comes with your computer.\n26 User Guide",
+          "score": 0.2646372364689991
+        },
+        {
+          "source": "LEGIONPRO5.pdf",
+          "page": 21,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "adapter from Lenovo at https://www.lenovo.com/accessories .\n17 User Guide",
+          "score": 0.2625741858350553
+        }
+      ]
+    },
+    {
+      "id": "compatibilidade-acer-nitro-jogos",
+      "question": "O que devo comparar para saber se um Acer Nitro roda um jogo específico?",
+      "answer": "Para saber se um Acer Nitro roda um jogo específico, você deve comparar as especificações técnicas do notebook com as necessidades mínimas e recomendadas do jogo. O Guia de Configuração, mencionado no manual, pode fornecer informações sobre a configuração do seu computador e suas características. Além disso, verifique se o jogo exige hardware como processador, memória RAM, armazenamento e cartão gráfico adequados que estão presentes em sua versão do Acer Nitro.\n\nFontes utilizadas:\n- NITRO5.pdf - Pagina 5\n- NITROV16SAI.pdf - Pagina 5\n- NITROV16SAI.pdf - Pagina 85\n- PREDATORHELIOSNEO16SAI.pdf - Pagina 96\n- NITROV16SAI.pdf - Pagina 1",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 35.798,
+      "sources_count": 5,
+      "avg_source_score": 0.2141,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "NITRO5.pdf",
+          "page": 5,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "6 - Primeiro que tudo\nPRIMEIRO  QUE  TUDO\nGostaríamos de lhe agradecer por ter escolhido um computador\nportátil Acer para preencher as suas necessidades de computador\nmóvel.\nOs seus manuais\nPara o ajudar a usar o seu comput ador portátil Acer, preparámos\numa série de manuais:\nPrimeiro, o Guia de Configuração  ajuda a iniciar-se na\nconfiguração do seu computador e apresenta as características e\nfunções básicas do seu novo computador.\nPara saber mais sobre como aumentar a sua produtividade com o\nseu computador, consulte o Manual do Utilizador . Esse manual",
+          "score": 0.22285714285714286
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 5,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "6 - Primeiro que tudo\nPRIMEIRO  QUE  TUDO\nGostaríamos de lhe agradecer por ter escolhido um computador\nportátil Acer para preencher as suas necessidades de computador\nmóvel.\nOs seus manuais\nPara o ajudar a usar o seu comput ador portátil Acer, preparámos\numa série de manuais:\nPrimeiro, o Guia de Configuração  ajuda a iniciar-se na\nconfiguração do seu computador e apresenta as características e\nfunções básicas do seu novo computador.\nPara saber mais sobre como aumentar a sua produtividade com o\nseu computador, consulte o Manual do Utilizador . Esse manual",
+          "score": 0.22285714285714286
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 85,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "Tem uma pergunta?\nNesta secção irá encontrar:\n• Perguntas frequentes\n• Sugestões para a utilização do Windows\n• Informações de resolução de problemas\n• Como se proteger online\n• Onde encontrar informações de  contacto de centros de\nreparação Acer",
+          "score": 0.20830005981991684
+        },
+        {
+          "source": "PREDATORHELIOSNEO16SAI.pdf",
+          "page": 96,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "Tem uma pergunta?\nNesta secção irá encontrar:\n• Perguntas frequentes\n• Sugestões para a utilização do Windows\n• Informações de resolução de problemas\n• Como se proteger online\n• Onde encontrar informações de contacto de centros de\nreparação Acer",
+          "score": 0.20830005981991684
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 1,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "2 -\n© 2026. Todos os Direitos Reservados.\nAcer Nitro V 16S AI\nInclui: ANV16S-I51\nEsta revisão: 03/2026\nImportante\nEste manual contém informação de propriedade protegida por\ndireitos de autor. A informação contida neste manual está sujeita a\nalterações sem aviso prévio. Al gumas funcionalidades descritas\nneste manual podem não ser suportadas dependendo da versão do\nsistema operativo. As imagens aq ui apresentadas servem apenas\nde referência, e podem conter informação ou funcionalidades que\nnão se aplicam ao seu comput ador. O Grupo Acer não se",
+          "score": 0.208036879932896
+        }
+      ]
+    },
+    {
+      "id": "otimizacao-plano-energia",
+      "question": "Qual a importância do plano de energia para desempenho em jogos no notebook?",
+      "answer": "O plano de energia não direta mente afeta o desempenho dos jogos, mas pode influenciar em aspectos como a durabilidade da bateria e a temperatura dos componentes. No NitroSense, é possível monitorar e ajustar o plano de energia para balancear entre consumo e performance, embora os níveis básicos de carga USB Tipo-C possam limitar o desempenho do sistema e dos jogos.\n\nFontes utilizadas:\n- NITRO5.pdf - Pagina 45\n- NITRO5.pdf - Pagina 46\n- NITROV16SAI.pdf - Pagina 17\n- ZEPHYRUSG16.pdf - Pagina 102",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 34.171,
+      "sources_count": 5,
+      "avg_source_score": 0.2319,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "NITRO5.pdf",
+          "page": 45,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "46 - NitroSense\nN ITRO S ENSE\nInicie a IU do NitroSense com um só toque na tecla NitroSense\ndedicada e aceda instantaneamente a uma interface do utilizador\nque lhe permite configurar o sistema e visualizar as informações\ndo sistema.\nA sua experiência sonora melhorada fornece uma vantagem\ncompetitiva assim como uma experiência mais imersiva.\nO ecrã principal de NitroSense\nO ecrã principal dá-lhe uma visão geral rápida do estado atual do\nseu computador, incluindo a velocidade das ventoinhas, o plano\nde energia, a temperatura dos componentes, o desempenho de",
+          "score": 0.2482316462276133
+        },
+        {
+          "source": "NITRO5.pdf",
+          "page": 46,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "NitroSense - 47\nControlo de ventoinha\nPoderá ajustar o desempenho da s ventoinhas que arrefecem a\nCPU e GPU do seu computador. Es tão disponíveis três níveis:\n[Auto] (Automático)  (predefinido), [Max] (Máx.)  e [Custom]\n(Personalizado).\nAo selecionar [Custom] (Personalizado) , irá ver duas corrediças\nque lhe permitem definir o arrefecimento da CPU e GPU de forma\nindependente.\nCoolBoost™\nAtive a função CoolBoost™ para aumentar a velocidade máxima\nda ventoinha, permitindo velocidades ainda mais rápidas e\naumentando o arrefecimento durante utilização intensiva.\nPlano de energia",
+          "score": 0.2436634176769943
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 17,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "carregada (com o transformador AC\nligado).\n# Ícone Item Descrição\nNota\nRelativamente à carga USB Tipo-C\n• A porta USB Tipo-C aceita até 19,5 V / 180 W de energia.\n• A carga USB Tipo-C está destinada apenas ao funcionamento básico do\nsistema.\n• O desempenho do sistema poderá  ficar limitado com a entrada USB\nTipo-C.\n• Nenhuma garantia é dada relativa mente ao desempenho de jogos,\ncapacidade total do sistema, funcionalidade em acoplagem ou suporte\npara ecrã externo 2K/4K quando utiliza a carga USB Tipo-C.\n• Caso a bateria fique totalmente descarregada (0%), pode ser necessário",
+          "score": 0.2394482010358202
+        },
+        {
+          "source": "NITRO5.pdf",
+          "page": 45,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "de energia, a temperatura dos componentes, o desempenho de\ncarregamento e muito mais. O ecrã fornece opções para cada\nfunção por forma a aumentar o desempenho.\nNota\nAs temperaturas apresentadas podem variar consoante a configuração do\nseu computador e a potência da CPU e GPU.",
+          "score": 0.22664711502135332
+        },
+        {
+          "source": "ZEPHYRUSG16.pdf",
+          "page": 102,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "certificação de cada país/região.\nDiretiva \"Conceção Ecológica\"\nA União Europeia anunciou a criação de uma estrutura para a definição\nde requisitos de conceção ecológica de produtos que consomem energia\n(2009/125/CE). As medidas específicas implementadas destinam-se a melhorar o\ndesempenho ambiental de produtos específicos ou de vários tipos de produtos. A\nASUS fornece informações sobre o produto em\nhttps://esg.asus.com/Compliance.htm.",
+          "score": 0.2017161238900369
+        }
+      ]
+    },
+    {
+      "id": "otimizacao-modo-alto-desempenho",
+      "question": "Devo usar modo alto desempenho para jogar em notebook gamer?",
+      "answer": "O uso do modo de alto desempenho pode ser vantajoso para gaming, pois maximiza a potência do hardware. No entanto, isso também aumenta o consumo de energia e pode gerar mais calor no sistema. Recomenda-se monitorizar as temperaturas durante o jogo para evitar sobreaquecimento.\n\nFontes utilizadas:\n- PREDATORHELIOSNEO16SAI.pdf - Pagina 46\n- UTFGAMINGF16.pdf - Pagina 59\n- ROGSTRIXG16.pdf - Pagina 89\n- NITROV16SAI.pdf - Pagina 17\n- PREDATORHELIOSNEO16SAI.pdf - Pagina 52",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 28.282,
+      "sources_count": 5,
+      "avg_source_score": 0.2067,
+      "keyword_recall": 0.5,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "PREDATORHELIOSNEO16SAI.pdf",
+          "page": 46,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "desempenho e temperaturas do sistema. Apresenta de\nforma dinâmica o modo de sistema atual com animações 3D\npor avatar, que refletem de forma exacta o estado\noperacional.\nNota\nA função varia consoante a configuração.",
+          "score": 0.22142135623730952
+        },
+        {
+          "source": "UTFGAMINGF16.pdf",
+          "page": 59,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "60\nPerguntas frequentes sobre hardware\n1. Um ponto preto ou, às vezes, um ponto colorido, aparece na\ntela quando eu ligo o notebook. O que devo fazer?\nEmbora esses pontos normalmente apareçam na tela, eles\nnão afetarão o sistema. Se o incidente continuar e acabar\nafetando o desempenho do sistema, consulte um revendedor\nautorizado do centro de serviço da ASUS.\n2. Meu painel de exibição está com cor e brilho desiguais.\nComo posso corrigir isso?\nA cor e o brilho do seu painel de exibição podem ser afetados\npelo ângulo e pela posição atuais do notebook. O brilho e",
+          "score": 0.21363062095621216
+        },
+        {
+          "source": "ROGSTRIXG16.pdf",
+          "page": 89,
+          "device": "asus_tuf",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "90\nPerguntas frequentes sobre hardware\n1. Um ponto preto ou, às vezes, um ponto colorido, aparece na\ntela quando eu ligo o notebook. O que devo fazer?\nEmbora esses pontos normalmente apareçam na tela, eles não\nafetarão o sistema. Se o incidente continuar e acabar afetando o\ndesempenho do sistema, consulte um revendedor autorizado do\ncentro de serviço da ASUS.\n2. Meu painel de exibição está com cor e brilho desiguais. Como\nposso corrigir isso?\nA cor e o brilho do seu painel de exibição podem ser afetados\npelo ângulo e pela posição atuais do notebook. O brilho e o tom",
+          "score": 0.21258252147247764
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 17,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "• Caso a bateria fique totalmente descarregada (0%), pode ser necessário\nusar o transformador Entrada DC AC para iniciar a carga.\n• Para um desempenho ideal, use um transformador com certificação Acer\nou dispositivo de Alimentação USB (USB Power Delivery).\n• As especificações variam de acordo  com o modelo ou sistema operativo.",
+          "score": 0.1978511301977579
+        },
+        {
+          "source": "PREDATORHELIOSNEO16SAI.pdf",
+          "page": 52,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "PredatorSense - 53\nCriar um perfil de cenário novo\nPode criar perfis de cenário com o modo de sistema\npersonalizado, desempenho de ventiladores, efeito de\niluminação, definição Acer TrueHarmony™ e aplicações\nassociadas.\nPara adicionar um novo perfil, faça o seguinte:\n1. Clique em  no ecrã [Scenario] (Cenário)  > [Add New]\n(Adicionar novo) (da lista de contexto). Introduza um nome\nnovo para o perfil e clique em [Create] (Criar).\nOu\n2. Selecione [Scenario Manager] (Gestor de Cenários)  >\n[New Scenario Profile] (Novo Perfil de Cenário) .\nIntroduza um nome novo para o perfil e clique em [Create]",
+          "score": 0.1878327732034384
+        }
+      ]
+    },
+    {
+      "id": "otimizacao-fechar-programas",
+      "question": "Fechar programas em segundo plano pode melhorar o desempenho em jogos?",
+      "answer": "Não há informações diretas sobre fechar programas em segundo plano na documentação fornecida. As fontes focam principalmente em modos de desempenho, gerenciamento de cenários e carga da USB Tipo-C. Para obter respostas específicas sobre o desempenho de jogos, seria necessário consultar seções mais direcionadas para otimização de desempenho no manual do usuário ou recursos dedicados a gaming.\n\nFontes utilizadas:\n- NITROV16SAI.pdf - Pagina 17\n- NITROV16SAI.pdf - Pagina 55\n- PREDATORHELIOSNEO16SAI.pdf - Pagina 52\n- NITROV16SAI.pdf - Pagina 52",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 29.041,
+      "sources_count": 5,
+      "avg_source_score": 0.198,
+      "keyword_recall": 0.75,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 17,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "carregada (com o transformador AC\nligado).\n# Ícone Item Descrição\nNota\nRelativamente à carga USB Tipo-C\n• A porta USB Tipo-C aceita até 19,5 V / 180 W de energia.\n• A carga USB Tipo-C está destinada apenas ao funcionamento básico do\nsistema.\n• O desempenho do sistema poderá  ficar limitado com a entrada USB\nTipo-C.\n• Nenhuma garantia é dada relativa mente ao desempenho de jogos,\ncapacidade total do sistema, funcionalidade em acoplagem ou suporte\npara ecrã externo 2K/4K quando utiliza a carga USB Tipo-C.\n• Caso a bateria fique totalmente descarregada (0%), pode ser necessário",
+          "score": 0.2180861926847485
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 55,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "bateria), pode escolher de entre os modos [Quiet] (Silencioso),\n[Balanced] (Equilibrado), [Performance] (Desempenho), Turbo\ne Eco. E cada um deles tem algo em específico para dar resposta\nàs diferentes utilizações. A iluminação mostrará o efeito de cor\ndurante um curto período de tempo quando muda os modos.",
+          "score": 0.19952286093343935
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 17,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "• Caso a bateria fique totalmente descarregada (0%), pode ser necessário\nusar o transformador Entrada DC AC para iniciar a carga.\n• Para um desempenho ideal, use um transformador com certificação Acer\nou dispositivo de Alimentação USB (USB Power Delivery).\n• As especificações variam de acordo  com o modelo ou sistema operativo.",
+          "score": 0.1978511301977579
+        },
+        {
+          "source": "PREDATORHELIOSNEO16SAI.pdf",
+          "page": 52,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "PredatorSense - 53\nCriar um perfil de cenário novo\nPode criar perfis de cenário com o modo de sistema\npersonalizado, desempenho de ventiladores, efeito de\niluminação, definição Acer TrueHarmony™ e aplicações\nassociadas.\nPara adicionar um novo perfil, faça o seguinte:\n1. Clique em  no ecrã [Scenario] (Cenário)  > [Add New]\n(Adicionar novo) (da lista de contexto). Introduza um nome\nnovo para o perfil e clique em [Create] (Criar).\nOu\n2. Selecione [Scenario Manager] (Gestor de Cenários)  >\n[New Scenario Profile] (Novo Perfil de Cenário) .\nIntroduza um nome novo para o perfil e clique em [Create]",
+          "score": 0.1878327732034384
+        },
+        {
+          "source": "NITROV16SAI.pdf",
+          "page": 52,
+          "device": "acer_nitro",
+          "document_type": "manual",
+          "topic": "performance",
+          "content": "NitroSense - 53\nPerfis de cenário\nPode criar, mudar o nome, duplicar, restaurar ou remover um\nperfil de cenário. Cada perfil pode ser redefinido no [Scenario\nManager] (Gestor de Cenários).\nPara gerir os perfis de cenário, clique em [Scenario Manager]\n(Gestor de Cenários).\nCriar um perfil de cenário novo\nPode criar perfis de cenário com modo de sistema personalizado,\ndesempenho das ventoinhas, configuração Acer TrueHarmony™ e\naplicações associadas.\nPara adicionar um novo perfil, faça o seguinte:\n1. Clique em  no ecrã [Scenario] (Cenário)  > [Add New]",
+          "score": 0.1866003581778052
+        }
+      ]
+    },
+    {
+      "id": "fontes-manual-vs-comunidade",
+      "question": "Quando a resposta deve priorizar manual técnico em vez de relatos de comunidade?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.4,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 0.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 0.0,
+      "sources": []
+    },
+    {
+      "id": "comparacao-modelos-notebooks",
+      "question": "Compare Lenovo LOQ, Acer Nitro e Asus TUF em termos de upgrade e otimização.",
+      "answer": "As informações fornecidas nos arquivos não oferecem comparações diretas entre os modelos Lenovo LOQ, Acer Nitro e Asus TUF. Os manuais disponíveis se concentram principalmente no uso geral dos notebooks Lenovo LOQ e em correções de driver para jogos específicos.\n\nPara uma比较开始：\n\n Lenovo LOQ、Acer Nitro和Asus TUF在升级和优化方面的比较信息没有包含在提供的文件中。这些文档主要集中在Lenovo LOQ系列的使用指南上，以及针对特定驱动程序问题的修复。\n\n建议查阅每个品牌官方的技术支持页面或相关用户手册以获取更详细的信息。\n\nFontes utilizadas:\n- LOQ15IRH8.pdf - Pagina 1\n- LEGION7.pdf - Pagina 1\n- LOQ15IAX9.pdf - Pagina 1\n- LEGIONPRO5.pdf - Pagina 21\n- LOQ15IAX9.pdf - Pagina 6\n- driver_notes_nvidia.txt - Pagina 1\n- LEGION7.pdf - Pagina 61",
+      "backend": "qwen2.5:7b",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 30.506,
+      "sources_count": 7,
+      "avg_source_score": 0.2494,
+      "keyword_recall": 0.6,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": [
+        {
+          "source": "LOQ15IRH8.pdf",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "User Guide\nLenovo LOQ Series",
+          "score": 0.29081851067789194
+        },
+        {
+          "source": "LEGION7.pdf",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "User Guide\nLenovo Legion 7 (15″, 05)",
+          "score": 0.27069251784911846
+        },
+        {
+          "source": "LOQ15IAX9.pdf",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "User Guide\nLenovo LOQ 15AHP9, Lenovo LOQ 15ARP9, Lenovo LOQ 15IAX9,\nLenovo LOQ 15IAX9I, and Lenovo LOQ 15IRX9",
+          "score": 0.24903085094570332
+        },
+        {
+          "source": "LEGIONPRO5.pdf",
+          "page": 21,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "adapter from Lenovo at https://www.lenovo.com/accessories .\n17 User Guide",
+          "score": 0.24329931618554518
+        },
+        {
+          "source": "LOQ15IAX9.pdf",
+          "page": 6,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "Camera light\nThe camera light indicates whether the camera is activated.\n© Copyright Lenovo 2024, 2025 1",
+          "score": 0.23811388300841896
+        },
+        {
+          "source": "driver_notes_nvidia.txt",
+          "page": 1,
+          "device": "lenovo_loq",
+          "document_type": "driver_notes",
+          "topic": "elden_ring",
+          "content": "- [Ghost of Tsushima Director's Cut] Fixed random desktop crashes (CTD) when\ncombining DLSS Frame Generation with Reflex Boost on specific hardware setups.\n- [Notebook Displays] Fixed screen flickering issues on certain high-refresh-rate\npanels (144Hz/165Hz) used in Lenovo LOQ and Acer Nitro laptops when G-Sync\nwas active in windowed mode.\n- [Discord] Video streaming or screen-sharing gameplay might exhibit slight color\ncorruption or artifacting when hardware acceleration is toggled on.\n--------------------------------------------------------------------------------",
+          "score": 0.23569978883230458
+        },
+        {
+          "source": "LEGION7.pdf",
+          "page": 61,
+          "device": "lenovo_loq",
+          "document_type": "manual",
+          "topic": "general",
+          "content": "Forum. All other trademarks are the property of their respective owners. © 2020 Lenovo.\n56 User Guide",
+          "score": 0.21801311186847083
+        }
+      ]
+    },
+    {
+      "id": "diagnostico-travamento-geral",
+      "question": "Quais passos seguir para diagnosticar travamentos em jogos no notebook?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.404,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 0.25,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 0.0,
+      "sources": []
+    },
+    {
+      "id": "diagnostico-sem-contexto-suficiente",
+      "question": "Meu jogo está ruim, o que faço?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.337,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 0.3333,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 0.0,
+      "sources": []
+    },
+    {
+      "id": "fora-do-escopo-receita",
+      "question": "Me ensine uma receita de bolo de chocolate.",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.276,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": []
+    },
+    {
+      "id": "fora-do-escopo-medicina",
+      "question": "Quais remédios devo tomar para dor de garganta?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.266,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": []
+    },
+    {
+      "id": "fora-do-escopo-financas",
+      "question": "Qual ação devo comprar na bolsa hoje?",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.229,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": []
+    },
+    {
+      "id": "fora-do-escopo-historia",
+      "question": "Explique as causas da Segunda Guerra Mundial.",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.224,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": []
+    },
+    {
+      "id": "fora-do-escopo-programacao",
+      "question": "Escreva um código em Python para ordenar uma lista.",
+      "answer": "Nao encontrei essa informacao na base de conhecimento disponivel.\n\nA GearMind e especializada em:\n\n- Hardware\n- Notebooks gamers\n- Drivers\n- Benchmarks\n- Compatibilidade de RAM\n- Compatibilidade de SSD\n- Otimizacao de jogos",
+      "backend": "rag",
+      "fallback_used": false,
+      "model_attempts": [],
+      "latency_seconds": 1.213,
+      "sources_count": 0,
+      "avg_source_score": 0,
+      "keyword_recall": 1.0,
+      "source_hit_rate": 1.0,
+      "rouge_l_f1": null,
+      "answer_completeness": 1.0,
+      "refusal_correct": 1.0,
+      "sources": []
+    }
+  ]
+}

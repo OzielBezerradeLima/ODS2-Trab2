@@ -1,0 +1,568 @@
+[
+  {
+    "id": "ram-lenovo-loq-limite",
+    "category": "hardware_ram",
+    "question": "Qual é o limite de RAM suportado pelo Lenovo LOQ?",
+    "device": "lenovo_loq",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "ram",
+      "memoria",
+      "limite",
+      "gb"
+    ],
+    "expected_sources": [
+      "loq"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 80
+  },
+  {
+    "id": "ram-lenovo-loq-tipo",
+    "category": "hardware_ram",
+    "question": "O Lenovo LOQ usa memória DDR4 ou DDR5?",
+    "device": "lenovo_loq",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "memoria",
+      "ddr",
+      "ram",
+      "lenovo"
+    ],
+    "expected_sources": [
+      "loq"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 70
+  },
+  {
+    "id": "ram-lenovo-loq-upgrade",
+    "category": "hardware_ram",
+    "question": "Vale a pena fazer upgrade de RAM no Lenovo LOQ para melhorar jogos?",
+    "device": "lenovo_loq",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "ram",
+      "upgrade",
+      "jogos",
+      "desempenho"
+    ],
+    "expected_sources": [
+      "loq"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "ram-acer-nitro-limite",
+    "category": "hardware_ram",
+    "question": "Qual o limite de memória RAM do Acer Nitro?",
+    "device": "acer_nitro",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "ram",
+      "memoria",
+      "limite",
+      "acer"
+    ],
+    "expected_sources": [
+      "nitro"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 80
+  },
+  {
+    "id": "ram-asus-tuf-upgrade",
+    "category": "hardware_ram",
+    "question": "Como verificar se o Asus TUF aceita upgrade de memória?",
+    "device": "asus_tuf",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "asus",
+      "tuf",
+      "memoria",
+      "upgrade"
+    ],
+    "expected_sources": [
+      "tuf"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "drivers-nvidia-atualizacao",
+    "category": "drivers",
+    "question": "Como atualizar o driver da NVIDIA para melhorar o desempenho em jogos?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "driver",
+      "nvidia",
+      "atualizar",
+      "desempenho"
+    ],
+    "expected_sources": [
+      "driver"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "drivers-amd-adrenalin",
+    "category": "drivers",
+    "question": "O que devo observar ao usar o AMD Adrenalin em um notebook gamer?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "amd",
+      "adrenalin",
+      "driver",
+      "notebook"
+    ],
+    "expected_sources": [
+      "driver"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "drivers-bios-cuidados",
+    "category": "drivers",
+    "question": "Quais cuidados devo tomar antes de atualizar a BIOS do notebook?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "bios",
+      "atualizar",
+      "cuidado",
+      "driver"
+    ],
+    "expected_sources": [
+      "driver"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "drivers-rollback",
+    "category": "drivers",
+    "question": "Quando vale a pena voltar para uma versão anterior do driver de vídeo?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "driver",
+      "versao",
+      "anterior",
+      "problema"
+    ],
+    "expected_sources": [
+      "driver"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "elden-ring-stuttering",
+    "category": "game_performance",
+    "question": "Como reduzir stuttering no Elden Ring?",
+    "device": "all",
+    "game": "elden_ring",
+    "top_k": 5,
+    "expected_keywords": [
+      "stuttering",
+      "travamento",
+      "driver",
+      "desempenho"
+    ],
+    "expected_sources": [
+      "elden"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "elden-ring-dlss",
+    "category": "game_performance",
+    "question": "DLSS ajuda no Elden Ring em notebooks gamer?",
+    "device": "all",
+    "game": "elden_ring",
+    "top_k": 5,
+    "expected_keywords": [
+      "dlss",
+      "elden",
+      "desempenho",
+      "notebook"
+    ],
+    "expected_sources": [
+      "elden"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "elden-ring-lenovo-loq",
+    "category": "game_performance",
+    "question": "Que ajustes posso fazer para jogar Elden Ring melhor no Lenovo LOQ?",
+    "device": "lenovo_loq",
+    "game": "elden_ring",
+    "top_k": 5,
+    "expected_keywords": [
+      "elden",
+      "lenovo",
+      "loq",
+      "desempenho"
+    ],
+    "expected_sources": [
+      "loq"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 110
+  },
+  {
+    "id": "valorant-asus-tuf-stuttering",
+    "category": "game_performance",
+    "question": "Como resolver travamentos ou stuttering no Valorant usando um Asus TUF?",
+    "device": "asus_tuf",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "stuttering",
+      "travamento",
+      "valorant",
+      "asus"
+    ],
+    "expected_sources": [
+      "tuf"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "fps-baixo-generico",
+    "category": "game_performance",
+    "question": "O que fazer quando o FPS está baixo mesmo com o notebook conectado na tomada?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "fps",
+      "desempenho",
+      "energia",
+      "driver"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "temperatura-alta-generico",
+    "category": "thermal_performance",
+    "question": "Quais ações ajudam a reduzir temperatura alta em notebook gamer?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "temperatura",
+      "desempenho",
+      "notebook",
+      "ventilacao"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "undervolt-conceito",
+    "category": "undervolt",
+    "question": "O que é undervolt e como ele pode ajudar em notebooks gamer?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "undervolt",
+      "voltagem",
+      "temperatura",
+      "desempenho"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "undervolt-riscos",
+    "category": "undervolt",
+    "question": "Quais são os riscos ou cuidados ao fazer undervolt?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "undervolt",
+      "risco",
+      "estabilidade",
+      "voltagem"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "undervolt-asus-tuf",
+    "category": "undervolt",
+    "question": "Undervolt pode ser uma alternativa para reduzir aquecimento no Asus TUF?",
+    "device": "asus_tuf",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "undervolt",
+      "asus",
+      "tuf",
+      "temperatura"
+    ],
+    "expected_sources": [
+      "tuf"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 100
+  },
+  {
+    "id": "compatibilidade-lenovo-loq-jogos",
+    "category": "compatibility",
+    "question": "Como verificar se um jogo é compatível com o hardware do Lenovo LOQ?",
+    "device": "lenovo_loq",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "compatibilidade",
+      "hardware",
+      "lenovo",
+      "loq"
+    ],
+    "expected_sources": [
+      "loq"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "compatibilidade-acer-nitro-jogos",
+    "category": "compatibility",
+    "question": "O que devo comparar para saber se um Acer Nitro roda um jogo específico?",
+    "device": "acer_nitro",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "acer",
+      "nitro",
+      "jogo",
+      "hardware"
+    ],
+    "expected_sources": [
+      "nitro"
+    ],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "otimizacao-plano-energia",
+    "category": "optimization",
+    "question": "Qual a importância do plano de energia para desempenho em jogos no notebook?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "energia",
+      "desempenho",
+      "jogos",
+      "notebook"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "otimizacao-modo-alto-desempenho",
+    "category": "optimization",
+    "question": "Devo usar modo alto desempenho para jogar em notebook gamer?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "alto desempenho",
+      "energia",
+      "jogar",
+      "notebook"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "otimizacao-fechar-programas",
+    "category": "optimization",
+    "question": "Fechar programas em segundo plano pode melhorar o desempenho em jogos?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "segundo plano",
+      "desempenho",
+      "jogos",
+      "memoria"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "fontes-manual-vs-comunidade",
+    "category": "rag_behavior",
+    "question": "Quando a resposta deve priorizar manual técnico em vez de relatos de comunidade?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "manual",
+      "comunidade",
+      "fonte",
+      "priorizar"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 90
+  },
+  {
+    "id": "comparacao-modelos-notebooks",
+    "category": "comparison",
+    "question": "Compare Lenovo LOQ, Acer Nitro e Asus TUF em termos de upgrade e otimização.",
+    "device": "all",
+    "game": "all",
+    "top_k": 7,
+    "expected_keywords": [
+      "lenovo",
+      "acer",
+      "asus",
+      "upgrade",
+      "otimizacao"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 140
+  },
+  {
+    "id": "diagnostico-travamento-geral",
+    "category": "diagnosis",
+    "question": "Quais passos seguir para diagnosticar travamentos em jogos no notebook?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "travamento",
+      "diagnosticar",
+      "driver",
+      "temperatura"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 120
+  },
+  {
+    "id": "diagnostico-sem-contexto-suficiente",
+    "category": "rag_behavior",
+    "question": "Meu jogo está ruim, o que faço?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "desempenho",
+      "driver",
+      "temperatura"
+    ],
+    "expected_sources": [],
+    "should_answer": true,
+    "min_answer_chars": 80
+  },
+  {
+    "id": "fora-do-escopo-receita",
+    "category": "out_of_scope",
+    "question": "Me ensine uma receita de bolo de chocolate.",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "nao encontrei",
+      "base de conhecimento"
+    ],
+    "expected_sources": [],
+    "should_answer": false,
+    "min_answer_chars": 20
+  },
+  {
+    "id": "fora-do-escopo-medicina",
+    "category": "out_of_scope",
+    "question": "Quais remédios devo tomar para dor de garganta?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "nao encontrei",
+      "base de conhecimento"
+    ],
+    "expected_sources": [],
+    "should_answer": false,
+    "min_answer_chars": 20
+  },
+  {
+    "id": "fora-do-escopo-financas",
+    "category": "out_of_scope",
+    "question": "Qual ação devo comprar na bolsa hoje?",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "nao encontrei",
+      "base de conhecimento"
+    ],
+    "expected_sources": [],
+    "should_answer": false,
+    "min_answer_chars": 20
+  },
+  {
+    "id": "fora-do-escopo-historia",
+    "category": "out_of_scope",
+    "question": "Explique as causas da Segunda Guerra Mundial.",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "nao encontrei",
+      "base de conhecimento"
+    ],
+    "expected_sources": [],
+    "should_answer": false,
+    "min_answer_chars": 20
+  },
+  {
+    "id": "fora-do-escopo-programacao",
+    "category": "out_of_scope",
+    "question": "Escreva um código em Python para ordenar uma lista.",
+    "device": "all",
+    "game": "all",
+    "top_k": 5,
+    "expected_keywords": [
+      "nao encontrei",
+      "base de conhecimento"
+    ],
+    "expected_sources": [],
+    "should_answer": false,
+    "min_answer_chars": 20
+  }
+]
